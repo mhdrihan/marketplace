@@ -11,6 +11,7 @@ class ProductController extends BaseController
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
         echo view('Costumer/Produk');
+        echo view('Template/Costumer_Template/footer');
     }
 
     public function kategori()
@@ -18,6 +19,7 @@ class ProductController extends BaseController
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
         echo view('Costumer/Kategori');
+        echo view('Template/Costumer_Template/footer');
     }
 
     public function promo()
@@ -25,6 +27,7 @@ class ProductController extends BaseController
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
         echo view('Costumer/Promo');
+        echo view('Template/Costumer_Template/footer');
     }
 
 }

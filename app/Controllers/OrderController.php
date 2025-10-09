@@ -11,6 +11,7 @@ class OrderController extends BaseController
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
         echo view('Costumer/Kategori');
+        echo view('Template/Costumer_Template/footer');
     }
 
     public function promo()
@@ -18,6 +19,7 @@ class OrderController extends BaseController
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
         echo view('Costumer/promo');
+        echo view('Template/Costumer_Template/footer');
     }
 
     public function pesanan()
@@ -25,6 +27,7 @@ class OrderController extends BaseController
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
         echo view('Costumer/Pesanan');
+        echo view('Template/Costumer_Template/footer');
     }
 
     public function wishlist()
@@ -32,6 +35,7 @@ class OrderController extends BaseController
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
         echo view('Costumer/Wishlist');
+        echo view('Template/Costumer_Template/footer');
     }
 
     public function keranjang()
@@ -39,6 +43,7 @@ class OrderController extends BaseController
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
         echo view('Costumer/Keranjang');
+        echo view('Template/Costumer_Template/footer');
 
     }
 }

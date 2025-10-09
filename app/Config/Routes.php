@@ -32,7 +32,7 @@ $routes->get('/Promosi-A', 'AdminController::Promosi');
 $routes->get('/dashboard-m', 'MerchantController::index');
 $routes->get('/ulasan', 'MerchantController::ulasan');
 $routes->get('/email', 'MerchantController::email');
-$routes->get('/produk', 'MerchantController::produk');
+$routes->get('/produk-m', 'MerchantController::produk');
 $routes->get('/order', 'MerchantController::order');
 $routes->get('/analisis-p', 'MerchantController::analisisProduk');
 $routes->get('/analisis-o', 'MerchantController::analisisOrder');
