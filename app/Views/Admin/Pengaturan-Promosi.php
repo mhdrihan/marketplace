@@ -75,267 +75,260 @@
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Modal Tambah Promo -->
-    <div class="modal fade" id="tambahPromoModal" tabindex="-1" aria-labelledby="tambahPromoModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title" id="tambahPromoModalLabel">Tambah Promo Baru</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="formTambahPromo">
-                        <div class="mb-3">
-                            <label class="form-label">Judul Promo</label>
-                            <input type="text" class="form-control" placeholder="Masukkan judul promo" required />
+<!-- Modal Tambah Promo -->
+<div class="modal fade" id="tambahPromoModal" tabindex="-1" aria-labelledby="tambahPromoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="tambahPromoModalLabel">Tambah Promo Baru</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formTambahPromo">
+                    <div class="mb-3">
+                        <label class="form-label">Judul Promo</label>
+                        <input type="text" class="form-control" placeholder="Masukkan judul promo" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Diskon (%)</label>
+                        <input type="number" class="form-control" placeholder="Contoh: 20" min="0" max="100" required />
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tanggal Mulai</label>
+                            <input type="date" class="form-control" required />
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Diskon (%)</label>
-                            <input type="number" class="form-control" placeholder="Contoh: 20" min="0" max="100"
-                                required />
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tanggal Selesai</label>
+                            <input type="date" class="form-control" required />
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Tanggal Mulai</label>
-                                <input type="date" class="form-control" required />
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Tanggal Selesai</label>
-                                <input type="date" class="form-control" required />
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Status</label>
-                            <select class="form-control" required>
-                                <option value="aktif">Aktif</option>
-                                <option value="nonaktif">Nonaktif</option>
-                                <option value="segera">Segera</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Deskripsi Promo</label>
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                    <button type="submit" form="formTambahPromo" class="btn btn-primary">Simpan</button>
-                </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Status</label>
+                        <select class="form-control" required>
+                            <option value="aktif">Aktif</option>
+                            <option value="nonaktif">Nonaktif</option>
+                            <option value="segera">Segera</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Deskripsi Promo</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="submit" form="formTambahPromo" class="btn btn-primary">Simpan</button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Modal Edit Promo -->
-    <div class="modal fade" id="editPromoModal1" tabindex="-1" aria-labelledby="editPromoModalLabel1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <div class="modal-header bg-warning text-white">
-                    <h5 class="modal-title" id="editPromoModalLabel1">Edit Promo Akhir Tahun</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="formEditPromo1">
-                        <div class="mb-3">
-                            <label class="form-label">Judul Promo</label>
-                            <input type="text" class="form-control" value="Promo Akhir Tahun" required />
+<!-- Modal Edit Promo -->
+<div class="modal fade" id="editPromoModal1" tabindex="-1" aria-labelledby="editPromoModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-white">
+                <h5 class="modal-title" id="editPromoModalLabel1">Edit Promo Akhir Tahun</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formEditPromo1">
+                    <div class="mb-3">
+                        <label class="form-label">Judul Promo</label>
+                        <input type="text" class="form-control" value="Promo Akhir Tahun" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Diskon (%)</label>
+                        <input type="number" class="form-control" value="30" min="0" max="100" required />
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tanggal Mulai</label>
+                            <input type="date" class="form-control" value="2025-12-01" required />
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Diskon (%)</label>
-                            <input type="number" class="form-control" value="30" min="0" max="100" required />
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tanggal Selesai</label>
+                            <input type="date" class="form-control" value="2025-12-31" required />
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Tanggal Mulai</label>
-                                <input type="date" class="form-control" value="2025-12-01" required />
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Tanggal Selesai</label>
-                                <input type="date" class="form-control" value="2025-12-31" required />
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Status</label>
-                            <select class="form-control" required>
-                                <option value="aktif" selected>Aktif</option>
-                                <option value="nonaktif">Nonaktif</option>
-                                <option value="segera">Segera</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Deskripsi Promo</label>
-                            <textarea class="form-control" rows="3">Deskripsi promo akhir tahun...</textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                    <button type="submit" form="formEditPromo1" class="btn btn-warning">Update</button>
-                </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Status</label>
+                        <select class="form-control" required>
+                            <option value="aktif" selected>Aktif</option>
+                            <option value="nonaktif">Nonaktif</option>
+                            <option value="segera">Segera</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Deskripsi Promo</label>
+                        <textarea class="form-control" rows="3">Deskripsi promo akhir tahun...</textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="submit" form="formEditPromo1" class="btn btn-warning">Update</button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Modal Edit Promo 2 -->
-    <div class="modal fade" id="editPromoModal2" tabindex="-1" aria-labelledby="editPromoModalLabel2"
-        aria-hidden="true">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <div class="modal-header bg-warning text-white">
-                    <h5 class="modal-title" id="editPromoModalLabel2">Edit Promo Hari Kemerdekaan</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="formEditPromo2">
-                        <div class="mb-3">
-                            <label class="form-label">Judul Promo</label>
-                            <input type="text" class="form-control" value="Promo Hari Kemerdekaan" required />
+<!-- Modal Edit Promo 2 -->
+<div class="modal fade" id="editPromoModal2" tabindex="-1" aria-labelledby="editPromoModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-white">
+                <h5 class="modal-title" id="editPromoModalLabel2">Edit Promo Hari Kemerdekaan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formEditPromo2">
+                    <div class="mb-3">
+                        <label class="form-label">Judul Promo</label>
+                        <input type="text" class="form-control" value="Promo Hari Kemerdekaan" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Diskon (%)</label>
+                        <input type="number" class="form-control" value="17" min="0" max="100" required />
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tanggal Mulai</label>
+                            <input type="date" class="form-control" value="2025-08-01" required />
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Diskon (%)</label>
-                            <input type="number" class="form-control" value="17" min="0" max="100" required />
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tanggal Selesai</label>
+                            <input type="date" class="form-control" value="2025-08-17" required />
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Tanggal Mulai</label>
-                                <input type="date" class="form-control" value="2025-08-01" required />
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Tanggal Selesai</label>
-                                <input type="date" class="form-control" value="2025-08-17" required />
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Status</label>
-                            <select class="form-control" required>
-                                <option value="aktif">Aktif</option>
-                                <option value="nonaktif" selected>Nonaktif</option>
-                                <option value="segera">Segera</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Deskripsi Promo</label>
-                            <textarea class="form-control" rows="3">Deskripsi promo hari kemerdekaan...</textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                    <button type="submit" form="formEditPromo2" class="btn btn-warning">Update</button>
-                </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Status</label>
+                        <select class="form-control" required>
+                            <option value="aktif">Aktif</option>
+                            <option value="nonaktif" selected>Nonaktif</option>
+                            <option value="segera">Segera</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Deskripsi Promo</label>
+                        <textarea class="form-control" rows="3">Deskripsi promo hari kemerdekaan...</textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="submit" form="formEditPromo2" class="btn btn-warning">Update</button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Modal Edit Promo 3 -->
-    <div class="modal fade" id="editPromoModal3" tabindex="-1" aria-labelledby="editPromoModalLabel3"
-        aria-hidden="true">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content">
-                <div class="modal-header bg-warning text-white">
-                    <h5 class="modal-title" id="editPromoModalLabel3">Edit Promo Ramadhan</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="formEditPromo3">
-                        <div class="mb-3">
-                            <label class="form-label">Judul Promo</label>
-                            <input type="text" class="form-control" value="Promo Ramadhan" required />
+<!-- Modal Edit Promo 3 -->
+<div class="modal fade" id="editPromoModal3" tabindex="-1" aria-labelledby="editPromoModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-white">
+                <h5 class="modal-title" id="editPromoModalLabel3">Edit Promo Ramadhan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formEditPromo3">
+                    <div class="mb-3">
+                        <label class="form-label">Judul Promo</label>
+                        <input type="text" class="form-control" value="Promo Ramadhan" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Diskon (%)</label>
+                        <input type="number" class="form-control" value="25" min="0" max="100" required />
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tanggal Mulai</label>
+                            <input type="date" class="form-control" value="2025-03-01" required />
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Diskon (%)</label>
-                            <input type="number" class="form-control" value="25" min="0" max="100" required />
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Tanggal Selesai</label>
+                            <input type="date" class="form-control" value="2025-03-30" required />
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Tanggal Mulai</label>
-                                <input type="date" class="form-control" value="2025-03-01" required />
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Tanggal Selesai</label>
-                                <input type="date" class="form-control" value="2025-03-30" required />
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Status</label>
-                            <select class="form-control" required>
-                                <option value="aktif">Aktif</option>
-                                <option value="nonaktif">Nonaktif</option>
-                                <option value="segera" selected>Segera</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Deskripsi Promo</label>
-                            <textarea class="form-control" rows="3">Deskripsi promo ramadhan...</textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                    <button type="submit" form="formEditPromo3" class="btn btn-warning">Update</button>
-                </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Status</label>
+                        <select class="form-control" required>
+                            <option value="aktif">Aktif</option>
+                            <option value="nonaktif">Nonaktif</option>
+                            <option value="segera" selected>Segera</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Deskripsi Promo</label>
+                        <textarea class="form-control" rows="3">Deskripsi promo ramadhan...</textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="submit" form="formEditPromo3" class="btn btn-warning">Update</button>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Modal Hapus Promo -->
-    <div class="modal fade" id="hapusPromoModal1" tabindex="-1" aria-labelledby="hapusPromoModalLabel1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header bg-danger text-white">
-                    <h5 class="modal-title" id="hapusPromoModalLabel1">Hapus Promo Akhir Tahun</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Apakah Anda yakin ingin menghapus promo <strong>Promo Akhir Tahun</strong>?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                    <button type="button" class="btn btn-danger">Hapus</button>
-                </div>
+<!-- Modal Hapus Promo -->
+<div class="modal fade" id="hapusPromoModal1" tabindex="-1" aria-labelledby="hapusPromoModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="hapusPromoModalLabel1">Hapus Promo Akhir Tahun</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Apakah Anda yakin ingin menghapus promo <strong>Promo Akhir Tahun</strong>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-danger">Hapus</button>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="modal fade" id="hapusPromoModal2" tabindex="-1" aria-labelledby="hapusPromoModalLabel2"
-        aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header bg-danger text-white">
-                    <h5 class="modal-title" id="hapusPromoModalLabel2">Hapus Promo Hari Kemerdekaan</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Apakah Anda yakin ingin menghapus promo <strong>Promo Hari Kemerdekaan</strong>?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                    <button type="button" class="btn btn-danger">Hapus</button>
-                </div>
+<div class="modal fade" id="hapusPromoModal2" tabindex="-1" aria-labelledby="hapusPromoModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="hapusPromoModalLabel2">Hapus Promo Hari Kemerdekaan</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Apakah Anda yakin ingin menghapus promo <strong>Promo Hari Kemerdekaan</strong>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-danger">Hapus</button>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="modal fade" id="hapusPromoModal3" tabindex="-1" aria-labelledby="hapusPromoModalLabel3"
-        aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header bg-danger text-white">
-                    <h5 class="modal-title" id="hapusPromoModalLabel3">Hapus Promo Ramadhan</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Apakah Anda yakin ingin menghapus promo <strong>Promo Ramadhan</strong>?</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                    <button type="button" class="btn btn-danger">Hapus</button>
-                </div>
+<div class="modal fade" id="hapusPromoModal3" tabindex="-1" aria-labelledby="hapusPromoModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="hapusPromoModalLabel3">Hapus Promo Ramadhan</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Apakah Anda yakin ingin menghapus promo <strong>Promo Ramadhan</strong>?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-danger">Hapus</button>
             </div>
         </div>
     </div>
+</div>
 </div>

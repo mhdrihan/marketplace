@@ -479,4 +479,6 @@
       </div>
     </div>
   </div>
-  <!-- content-wrapper ends -->
+</div>
+</div>
+<!-- content-wrapper ends -->
