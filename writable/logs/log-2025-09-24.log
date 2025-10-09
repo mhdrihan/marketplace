@@ -1,0 +1,52 @@
+CRITICAL - 2025-09-24 04:25:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Admin/ManajemenPengguna.php"
+[Method: GET, Route: Manajemen-Pengguna]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/ManajemenPengguna.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Admin/ManajemenPengguna', [], true)
+ 3 APPPATH\Controllers\AdminController.php(32): view('Admin/ManajemenPengguna')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Manajemenpengguna()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-24 04:25:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Admin/ManajemenPengguna.php"
+[Method: GET, Route: Manajemen-Pengguna]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/ManajemenPengguna.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Admin/ManajemenPengguna', [], true)
+ 3 APPPATH\Controllers\AdminController.php(32): view('Admin/ManajemenPengguna')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Manajemenpengguna()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-24 04:26:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Admin/ManajemenPengguna.php"
+[Method: GET, Route: Manajemen-Pengguna]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/ManajemenPengguna.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Admin/ManajemenPengguna', [], true)
+ 3 APPPATH\Controllers\AdminController.php(32): view('Admin/ManajemenPengguna')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Manajemenpengguna()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-24 04:28:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Admin/ManajemenPengguna.php"
+[Method: GET, Route: Manajemen-Pengguna]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/ManajemenPengguna.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Admin/ManajemenPengguna', [], true)
+ 3 APPPATH\Controllers\AdminController.php(32): view('Admin/ManajemenPengguna')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->Manajemenpengguna()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')

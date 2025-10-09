@@ -1,0 +1,103 @@
+CRITICAL - 2025-09-08 02:16:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Template/Costumer_Template/footer.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Template/Costumer_Template/footer.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Template/Costumer_Template/footer', [], true)
+ 3 APPPATH\Controllers\CostumerController.php(23): view('Template/Costumer_Template/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CostumerController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CostumerController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-08 02:16:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Template/Costumer_Template/footer.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Template/Costumer_Template/footer.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Template/Costumer_Template/footer', [], true)
+ 3 APPPATH\Controllers\CostumerController.php(23): view('Template/Costumer_Template/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CostumerController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CostumerController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-08 02:16:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Template/Costumer_Template/footer.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Template/Costumer_Template/footer.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Template/Costumer_Template/footer', [], true)
+ 3 APPPATH\Controllers\CostumerController.php(23): view('Template/Costumer_Template/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CostumerController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CostumerController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-08 02:19:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Template/Costumer_Template/footer.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Template/Costumer_Template/footer.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Template/Costumer_Template/footer', [], true)
+ 3 APPPATH\Controllers\CostumerController.php(23): view('Template/Costumer_Template/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CostumerController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CostumerController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-08 02:19:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Template/Costumer_Template/footer.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Template/Costumer_Template/footer.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Template/Costumer_Template/footer', [], true)
+ 3 APPPATH\Controllers\CostumerController.php(23): view('Template/Costumer_Template/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CostumerController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CostumerController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-08 02:28:15 --> Error: Class "App\Models\CategoryModel" not found
+[Method: GET, Route: /]
+in APPPATH\Controllers\CostumerController.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\CostumerController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-08 04:32:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "costumer/index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('costumer/index.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('costumer/index', [], true)
+ 3 APPPATH\Controllers\CostumerController.php(21): view('costumer/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CostumerController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CostumerController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-08 06:51:10 --> ErrorException: Undefined variable $title
+[Method: GET, Route: kategori]
+in APPPATH\Views\Costumer\kategori.php on line 28.
+ 1 APPPATH\Views\Costumer\kategori.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\xampp\\htdocs\\marketplace\\app\\Views\\Costumer\\kategori.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\xampp\\htdocs\\marketplace\\app\\Views\\Costumer\\kategori.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Costumer/Kategori', [], true)
+ 5 APPPATH\Controllers\CostumerController.php(20): view('Costumer/Kategori')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CostumerController->kategori()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CostumerController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\xampp\\htdocs\\marketplace\\public\\index.php')

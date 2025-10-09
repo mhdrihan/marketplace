@@ -1,0 +1,39 @@
+CRITICAL - 2025-09-12 02:46:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/Profile.php"
+[Method: GET, Route: profile]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Auth/Profile.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Auth/Profile', [], true)
+ 3 APPPATH\Controllers\AuthController.php(36): view('Auth/Profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->profile()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-12 02:47:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/Profile.php"
+[Method: GET, Route: profile]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Auth/Profile.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Auth/Profile', [], true)
+ 3 APPPATH\Controllers\AuthController.php(36): view('Auth/Profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->profile()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
+CRITICAL - 2025-09-12 02:49:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Auth/Profile.php"
+[Method: GET, Route: Profile]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Auth/Profile.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Auth/Profile', [], true)
+ 3 APPPATH\Controllers\AuthController.php(36): view('Auth/Profile', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->profile()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\marketplace\\public\\index.php')
