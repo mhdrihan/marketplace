@@ -11,6 +11,7 @@ class CostumerController extends BaseController
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
         echo view('Costumer/Dashboard', );
+        echo view('Template/Costumer_Template/footer');
     }
 
     public function kategori()
@@ -18,6 +19,7 @@ class CostumerController extends BaseController
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
         echo view('Costumer/Kategori');
+        echo view('Template/Costumer_Template/footer');
     }
 
     public function notifikasi()
@@ -25,5 +27,6 @@ class CostumerController extends BaseController
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
         echo view('Costumer/Notifikasi');
+        echo view('Template/Costumer_Template/footer');
     }
 }

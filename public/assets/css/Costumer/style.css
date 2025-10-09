@@ -561,7 +561,6 @@ body {
     color: #0d6efd;
     font-weight: 600;
 }
-<style>
     .footer-link {
         color: #ffffffcc;
         text-decoration: none;
@@ -584,4 +583,81 @@ body {
     .social-icon:hover {
         color: #fff;
     }
+    .wishlist-item:hover {
+        transform: translateY(-3px);
+        transition: 0.3s ease;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .wishlist-item img {
+        max-height: 180px;
+        object-fit: cover;
+    }
+
+    .wishlist-item .btn-primary {
+        background-color: #4a47a3;
+        border-color: #4a47a3;
+    }
+
+    .wishlist-item .btn-primary:hover {
+        background-color: #3b378e;
+        border-color: #3b378e;
+    }
+
+    .wishlist-item .btn-outline-danger:hover {
+        background-color: #ff4d6d;
+        color: #fff;
+    }
+  .footer {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer h5 {
+    font-size: 1.2rem;
+  }
+
+  .footer-link {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: 0.3s;
+    display: block;
+    padding: 2px 0;
+  }
+
+  .footer-link:hover {
+    color: #fff;
+    transform: translateX(3px);
+  }
+
+  .social-links {
+    display: flex;
+    gap: 12px;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .social-icon:hover {
+    background: #fff;
+    color: #007bff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  }
+
+  .footer p,
+  .footer a,
+  .footer small {
+    font-family: "Poppins", sans-serif;
+  }
 </style>

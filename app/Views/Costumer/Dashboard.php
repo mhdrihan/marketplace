@@ -255,47 +255,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Footer -->
-    <footer class="mt-5 bg-light pt-4 pb-4">
-        <div class="container">
-            <div class="row">
-                <!-- Tentang -->
-                <div class="col-md-4 mb-4">
-                    <h5>Marketplace UMKM</h5>
-                    <p>Marketplace UMKM adalah platform yang mendukung pelaku usaha mikro, kecil, dan menengah dengan
-                        menyediakan berbagai produk berkualitas dari seluruh Indonesia.</p>
-                </div>
-                <!-- Link Cepat -->
-                <div class="col-md-4 mb-4">
-                    <h5>Link Cepat</h5>
-                    <ul class="footer-links list-unstyled">
-                        <li><a href="#">Beranda</a></li>
-                        <li><a href="#">Produk</a></li>
-                        <li><a href="#">Kategori</a></li>
-                        <li><a href="#">Kontak</a></li>
-                        <li><a href="#">Bantuan</a></li>
-                    </ul>
-                </div>
-                <!-- Kontak -->
-                <div class="col-md-4 mb-4">
-                    <h5>Kontak Kami</h5>
-                    <p><i class="fas fa-map-marker-alt me-2"></i>Jl. Contoh No.123, Jakarta</p>
-                    <p><i class="fas fa-phone me-2"></i>+62 812 3456 7890</p>
-                    <div>
-                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom mt-3 text-center">
-                Copyright © 2025. All rights reserved.
-            </div>
-        </div>
-    </footer>
-
     <!-- Bootstrap JS Bundle (Popper + Bootstrap JS) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
