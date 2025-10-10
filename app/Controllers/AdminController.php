@@ -81,4 +81,13 @@ class AdminController extends BaseController
         echo view('Admin/Pengaturan-Promosi');
         echo view('Template/Admin_Template/footer');
     }
+
+    public function Sistem()
+    {
+        echo view('Template/Admin_Template/header');
+        echo view('Template/Admin_Template/navbar');
+        echo view('Template/Admin_Template/sidebar');
+        echo view('Admin/Pengaturan-Sistem');
+        echo view('Template/Admin_Template/footer');
+    }
 }

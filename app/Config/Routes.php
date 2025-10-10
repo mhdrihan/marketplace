@@ -26,6 +26,7 @@ $routes->get('/Kategori-A', 'AdminController::kategori');
 $routes->get('/Pesanan-A', 'AdminController::Pesanan');
 $routes->get('/Keuangan-A', 'AdminController::Keuangan');
 $routes->get('/Promosi-A', 'AdminController::Promosi');
+$routes->get('/Sistem-A', 'AdminController::Sistem');
 
 
 // Route Merchant
