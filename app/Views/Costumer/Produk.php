@@ -1,10 +1,10 @@
 <div class="container my-5">
-    <h2 class="mb-4 text-center">Daftar Produk</h2>
+    <h2 class="mb-4 text-center fw-bold text-primary">Daftar Produk</h2>
 
     <!-- Filter & Search -->
-    <div class="row mb-4">
+    <div class="row mb-4 align-items-center">
         <div class="col-md-4">
-            <select class="form-select">
+            <select class="form-select shadow-sm border-0 rounded-pill">
                 <option selected>Semua Kategori</option>
                 <option value="1">Fashion</option>
                 <option value="2">Elektronik</option>
@@ -12,68 +12,100 @@
             </select>
         </div>
         <div class="col-md-4 offset-md-4">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Cari produk...">
-                <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+            <div class="input-group shadow-sm">
+                <input type="text" class="form-control border-0" placeholder="Cari produk...">
+                <button class="btn btn-primary px-3" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
         </div>
     </div>
 
-    <!-- Produk Grid -->
-    <div class="row g-4">
-        <!-- Produk 1 -->
-        <div class="col-md-3">
-            <div class="card h-100 shadow-sm border-0">
-                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produk A">
-                <div class="card-body">
-                    <h5 class="card-title">Produk A</h5>
-                    <p class="card-text text-muted">Rp 150.000</p>
-                    <p class="card-text"><small class="text-muted">Kategori: Fashion</small></p>
-                    <a href="#" class="btn btn-sm btn-primary">Lihat Detail</a>
-                    <a href="#" class="btn btn-sm btn-outline-success"><i class="fas fa-cart-plus"></i> Keranjang</a>
-                </div>
+    <!-- Produk List (Vertical Style) -->
+    <div class="product-item card mb-4 shadow-sm border-0 p-3">
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+                <img src="https://via.placeholder.com/250x180" class="img-fluid rounded" alt="Produk A">
+            </div>
+            <div class="col-md-6">
+                <h5 class="fw-semibold mb-1">Produk A</h5>
+                <p class="text-muted mb-1">Rp 150.000</p>
+                <p class="small text-secondary mb-2">Kategori: Fashion</p>
+                <span class="badge bg-light text-primary border">Produk Unggulan</span>
+            </div>
+            <div class="col-md-3 text-md-end text-center mt-3 mt-md-0">
+                <a href="#" class="btn btn-sm btn-outline-primary me-2">
+                    <i class="fas fa-eye"></i> Detail
+                </a>
+                <a href="#" class="btn btn-sm btn-success">
+                    <i class="fas fa-cart-plus"></i> Keranjang
+                </a>
             </div>
         </div>
+    </div>
 
-        <!-- Produk 2 -->
-        <div class="col-md-3">
-            <div class="card h-100 shadow-sm border-0">
-                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produk B">
-                <div class="card-body">
-                    <h5 class="card-title">Produk B</h5>
-                    <p class="card-text text-muted">Rp 250.000</p>
-                    <p class="card-text"><small class="text-muted">Kategori: Elektronik</small></p>
-                    <a href="#" class="btn btn-sm btn-primary">Lihat Detail</a>
-                    <a href="#" class="btn btn-sm btn-outline-success"><i class="fas fa-cart-plus"></i> Keranjang</a>
-                </div>
+    <div class="product-item card mb-4 shadow-sm border-0 p-3">
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+                <img src="https://via.placeholder.com/250x180" class="img-fluid rounded" alt="Produk B">
+            </div>
+            <div class="col-md-6">
+                <h5 class="fw-semibold mb-1">Produk B</h5>
+                <p class="text-muted mb-1">Rp 250.000</p>
+                <p class="small text-secondary mb-2">Kategori: Elektronik</p>
+                <span class="badge bg-light text-success border">Diskon 10%</span>
+            </div>
+            <div class="col-md-3 text-md-end text-center mt-3 mt-md-0">
+                <a href="#" class="btn btn-sm btn-outline-primary me-2">
+                    <i class="fas fa-eye"></i> Detail
+                </a>
+                <a href="#" class="btn btn-sm btn-success">
+                    <i class="fas fa-cart-plus"></i> Keranjang
+                </a>
             </div>
         </div>
+    </div>
 
-        <!-- Produk 3 -->
-        <div class="col-md-3">
-            <div class="card h-100 shadow-sm border-0">
-                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produk C">
-                <div class="card-body">
-                    <h5 class="card-title">Produk C</h5>
-                    <p class="card-text text-muted">Rp 100.000</p>
-                    <p class="card-text"><small class="text-muted">Kategori: Makanan</small></p>
-                    <a href="#" class="btn btn-sm btn-primary">Lihat Detail</a>
-                    <a href="#" class="btn btn-sm btn-outline-success"><i class="fas fa-cart-plus"></i> Keranjang</a>
-                </div>
+    <div class="product-item card mb-4 shadow-sm border-0 p-3">
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+                <img src="https://via.placeholder.com/250x180" class="img-fluid rounded" alt="Produk C">
+            </div>
+            <div class="col-md-6">
+                <h5 class="fw-semibold mb-1">Produk C</h5>
+                <p class="text-muted mb-1">Rp 100.000</p>
+                <p class="small text-secondary mb-2">Kategori: Makanan</p>
+                <span class="badge bg-light text-warning border">Baru Rilis</span>
+            </div>
+            <div class="col-md-3 text-md-end text-center mt-3 mt-md-0">
+                <a href="#" class="btn btn-sm btn-outline-primary me-2">
+                    <i class="fas fa-eye"></i> Detail
+                </a>
+                <a href="#" class="btn btn-sm btn-success">
+                    <i class="fas fa-cart-plus"></i> Keranjang
+                </a>
             </div>
         </div>
+    </div>
 
-        <!-- Produk 4 -->
-        <div class="col-md-3">
-            <div class="card h-100 shadow-sm border-0">
-                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Produk D">
-                <div class="card-body">
-                    <h5 class="card-title">Produk D</h5>
-                    <p class="card-text text-muted">Rp 300.000</p>
-                    <p class="card-text"><small class="text-muted">Kategori: Fashion</small></p>
-                    <a href="#" class="btn btn-sm btn-primary">Lihat Detail</a>
-                    <a href="#" class="btn btn-sm btn-outline-success"><i class="fas fa-cart-plus"></i> Keranjang</a>
-                </div>
+    <div class="product-item card mb-4 shadow-sm border-0 p-3">
+        <div class="row align-items-center">
+            <div class="col-md-3 text-center">
+                <img src="https://via.placeholder.com/250x180" class="img-fluid rounded" alt="Produk D">
+            </div>
+            <div class="col-md-6">
+                <h5 class="fw-semibold mb-1">Produk D</h5>
+                <p class="text-muted mb-1">Rp 300.000</p>
+                <p class="small text-secondary mb-2">Kategori: Fashion</p>
+                <span class="badge bg-light text-danger border">Stok Terbatas</span>
+            </div>
+            <div class="col-md-3 text-md-end text-center mt-3 mt-md-0">
+                <a href="#" class="btn btn-sm btn-outline-primary me-2">
+                    <i class="fas fa-eye"></i> Detail
+                </a>
+                <a href="#" class="btn btn-sm btn-success">
+                    <i class="fas fa-cart-plus"></i> Keranjang
+                </a>
             </div>
         </div>
     </div>
