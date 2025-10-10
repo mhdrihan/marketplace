@@ -30,14 +30,7 @@ class AuthController extends BaseController
         echo view('Auth/Register', $data);
 
     }
-    public function profile()
-    {
-        $data['title'] = 'Profile';
-
-        echo view('Auth/Profile', $data);
-
-    }
-
+    
     public function doLogin()
     {
         $username = $this->request->getPost('username');
