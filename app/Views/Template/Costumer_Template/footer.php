@@ -14,9 +14,10 @@
             <div class="col-lg-4 col-md-6">
                 <h5 class="fw-bold mb-3 text-white">Link Cepat</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="footer-link"><i class="fas fa-angle-right me-2"></i>Beranda</a></li>
+                    <li><a href="/" class="footer-link"><i class="fas fa-angle-right me-2"></i>Beranda</a>
+                    </li>
                     <li><a href="#" class="footer-link"><i class="fas fa-angle-right me-2"></i>Produk</a></li>
-                    <li><a href="#" class="footer-link"><i class="fas fa-angle-right me-2"></i>Kategori</a></li>
+                    <li><a href="kategori" class="footer-link"><i class="fas fa-angle-right me-2"></i>Kategori</a></li>
                     <li><a href="#" class="footer-link"><i class="fas fa-angle-right me-2"></i>Kontak</a></li>
                     <li><a href="#" class="footer-link"><i class="fas fa-angle-right me-2"></i>Bantuan</a></li>
                 </ul>

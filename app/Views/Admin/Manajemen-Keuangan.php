@@ -5,6 +5,8 @@
             <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card shadow-sm border-0">
                     <div class="card-body">
+
+                        <!-- Header -->
                         <div class="d-flex justify-content-between align-items-center mb-4">
                             <div>
                                 <h4 class="card-title mb-1 text-primary fw-bold">Laporan Keuangan</h4>
@@ -12,9 +14,15 @@
                                     Pantau arus kas masuk dan keluar dari seluruh transaksi di platform UMKM.
                                 </p>
                             </div>
-                            <button class="btn btn-outline-primary rounded-pill px-4" onclick="window.print()">
-                                <i class="ti-printer me-1"></i> Cetak Semua
-                            </button>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-primary rounded-pill px-4" data-bs-toggle="modal"
+                                    data-bs-target="#tambahTransaksiModal">
+                                    <i class="ti-plus me-1"></i> Tambah Transaksi
+                                </button>
+                                <button class="btn btn-outline-primary rounded-pill px-4" onclick="window.print()">
+                                    <i class="ti-printer me-1"></i> Cetak Semua
+                                </button>
+                            </div>
                         </div>
 
                         <!-- Table -->
@@ -62,12 +70,17 @@
                             </table>
                         </div>
 
-                        <!-- Tombol Tambah Transaksi -->
-                        <div class="d-flex justify-content-center mt-5">
-                            <button class="btn btn-primary rounded-pill px-4 py-2 shadow-sm" data-bs-toggle="modal"
-                                data-bs-target="#tambahTransaksiModal">
-                                <i class="ti-plus me-1"></i> Tambah Transaksi
-                            </button>
+                        <!-- Pagination -->
+                        <div class="d-flex justify-content-center mt-4">
+                            <nav>
+                                <ul class="pagination pagination-rounded mb-0">
+                                    <li class="page-item disabled"><a class="page-link" href="#">Sebelumnya</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Berikutnya</a></li>
+                                </ul>
+                            </nav>
                         </div>
 
                         <!-- Keterangan -->
@@ -75,19 +88,19 @@
                             <h6 class="fw-bold mb-3 text-primary">Keterangan:</h6>
                             <ul class="list-unstyled mb-0 small text-muted">
                                 <li class="mb-2"><strong>Pemasukan</strong> — Uang yang diterima dari hasil penjualan
-                                    atau pendapatan
-                                    lain.</li>
+                                    atau pendapatan lain.</li>
                                 <li class="mb-2"><strong>Pengeluaran</strong> — Biaya yang dikeluarkan untuk
-                                    operasional, promosi, atau
-                                    maintenance.</li>
+                                    operasional, promosi, atau maintenance.</li>
                                 <li><strong>Saldo</strong> — Total akhir dari pemasukan dikurangi pengeluaran.</li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <!-- Modal Tambah Transaksi -->
@@ -146,10 +159,8 @@
             <div class="modal-body">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><strong>Tanggal:</strong> <span id="detailTanggal"></span></li>
-                    <li class="list-group-item"><strong>Keterangan:</strong> <span id="detailKeterangan"></span>
-                    </li>
-                    <li class="list-group-item"><strong>Jenis Transaksi:</strong> <span id="detailJenis"></span>
-                    </li>
+                    <li class="list-group-item"><strong>Keterangan:</strong> <span id="detailKeterangan"></span></li>
+                    <li class="list-group-item"><strong>Jenis Transaksi:</strong> <span id="detailJenis"></span></li>
                     <li class="list-group-item"><strong>Jumlah:</strong> <span id="detailJumlah"></span></li>
                     <li class="list-group-item"><strong>Saldo Setelah Transaksi:</strong> <span id="detailSaldo"></span>
                     </li>
@@ -163,7 +174,6 @@
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <script>
@@ -200,25 +210,25 @@
 
         const row = document.createElement('tr');
         row.innerHTML = `
-      <td>${nomor}</td>
-      <td>${new Date(tanggal).toLocaleDateString('id-ID')}</td>
-      <td>${keterangan}</td>
-      <td>${pemasukan}</td>
-      <td>${pengeluaran}</td>
-      <td>Rp ${saldo.toLocaleString()}</td>
-      <td>
-        <button class="btn btn-sm btn-outline-info rounded-pill px-3"
-          data-bs-toggle="modal"
-          data-bs-target="#detailModal"
-          data-tanggal="${new Date(tanggal).toLocaleDateString('id-ID')}"
-          data-keterangan="${keterangan}"
-          data-jenis="${jenis === 'pemasukan' ? 'Pemasukan' : 'Pengeluaran'}"
-          data-jumlah="Rp ${jumlah.toLocaleString()}"
-          data-saldo="Rp ${saldo.toLocaleString()}">
-          <i class="ti-eye"></i> Detail
-        </button>
-      </td>
-    `;
+    <td>${nomor}</td>
+    <td>${new Date(tanggal).toLocaleDateString('id-ID')}</td>
+    <td>${keterangan}</td>
+    <td>${pemasukan}</td>
+    <td>${pengeluaran}</td>
+    <td>Rp ${saldo.toLocaleString()}</td>
+    <td>
+      <button class="btn btn-sm btn-outline-info rounded-pill px-3"
+        data-bs-toggle="modal"
+        data-bs-target="#detailModal"
+        data-tanggal="${new Date(tanggal).toLocaleDateString('id-ID')}"
+        data-keterangan="${keterangan}"
+        data-jenis="${jenis === 'pemasukan' ? 'Pemasukan' : 'Pengeluaran'}"
+        data-jumlah="Rp ${jumlah.toLocaleString()}"
+        data-saldo="Rp ${saldo.toLocaleString()}">
+        <i class="ti-eye"></i> Detail
+      </button>
+    </td>`;
+
         dataKeuangan.appendChild(row);
 
         document.getElementById('totalPemasukan').textContent = `Rp ${totalPemasukan.toLocaleString()}`;
