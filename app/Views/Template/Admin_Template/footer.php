@@ -13,6 +13,7 @@
 </div>
 <!-- container-scroller -->
 <!-- plugins:js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="/assets/vendors/Admin/vendors/js/vendor.bundle.base.js"></script>
 <script src="/assets/vendors/Admin/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
 <!-- endinject -->
@@ -32,6 +33,47 @@
 <script src="/assets/js/Admin/js/dashboard.js"></script>
 <!-- <script src="assets/js/Chart.roundedBarCharts.js"></script> -->
 <!-- End custom js for this page-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    $(document).ready(function () {
+        document.querySelectorAll('.btn-delete').forEach(button => {
+            button.addEventListener('click', function () {
+                const userId = this.getAttribute('data-id');
+                const userName = this.getAttribute('data-name');
+
+                Swal.fire({
+                    title: 'Yakin ingin menghapus?',
+                    text: `User "${userName}" akan dihapus secara permanen.`,
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#d33',
+                    cancelButtonColor: '#6c757d',
+                    confirmButtonText: 'Ya, hapus!',
+                    cancelButtonText: 'Batal'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = `/User/delete/${userId}`;
+                    }
+                });
+            });
+        });
+        <?php if (session()->getFlashdata('error')): ?>
+            Swal.fire({
+                icon: 'error',
+                title: 'Gagal!',
+                text: '<?= session()->getFlashdata('error') ?>',
+                confirmButtonText: 'OK'
+            });
+        <?php elseif (session()->getFlashdata('success')): ?>
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                text: '<?= session()->getFlashdata('success') ?>',
+                confirmButtonText: 'OK'
+            });
+        <?php endif; ?>
+    });
+</script>
 </body>
 
 </html>

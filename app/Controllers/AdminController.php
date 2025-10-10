@@ -37,6 +37,70 @@ class AdminController extends BaseController
         echo view('Template/Admin_Template/footer');
     }
 
+    public function edit_user($id)
+    {
+        $validation = \Config\Services::validation();
+
+        $rules = [
+            'name' => 'required|min_length[3]',
+            'username' => 'required|min_length[3]|is_unique[users.username,user_id,' . $id . ']',
+            'email' => 'required|valid_email|is_unique[users.email,user_id,' . $id . ']',
+            'phone' => 'required|numeric|min_length[10]|max_length[15]',
+            'role' => 'required'
+        ];
+
+        $errors = [
+            'username' => [
+                'required' => 'Username wajib diisi.',
+                'min_length' => 'Username minimal 3 karakter.',
+                'is_unique' => 'Username sudah digunakan oleh user lain.'
+            ],
+            'email' => [
+                'required' => 'Email wajib diisi.',
+                'valid_email' => 'Format email tidak valid.',
+                'is_unique' => 'Email sudah terdaftar oleh user lain.'
+            ],
+            'phone' => [
+                'required' => 'Nomor telepon wajib diisi.',
+                'numeric' => 'Nomor telepon hanya boleh berisi angka.',
+                'min_length' => 'Nomor telepon minimal 10 digit.',
+                'max_length' => 'Nomor telepon maksimal 15 digit.'
+            ],
+            'role' => [
+                'required' => 'Role wajib dipilih.'
+            ]
+        ];
+
+        if (!$this->validate($rules, $errors)) {
+            return redirect()->back()->with('error', 'Validasi gagal. Periksa input Anda.');
+        }
+
+        $data = [
+            'name' => $this->request->getPost('name'),
+            'username' => $this->request->getPost('username'),
+            'email' => $this->request->getPost('email'),
+            'phone' => $this->request->getPost('phone'),
+            'role' => $this->request->getPost('role'),
+        ];
+
+        $this->authModel->update($id, $data);
+
+        return redirect()->to('/User')->with('success', 'Data user berhasil diperbarui.');
+    }
+
+    public function delete_user($id)
+    {
+        $user = $this->authModel->find($id);
+
+        if (!$user) {
+            return redirect()->to('/User')->with('error', 'User tidak ditemukan.');
+        }
+
+        $this->authModel->delete($id);
+
+        return redirect()->to('/User')->with('success', 'User berhasil dihapus.');
+    }
+
     public function Produk()
     {
         echo view('Template/Admin_Template/header');

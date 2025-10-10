@@ -21,6 +21,8 @@ $routes->get('/notifikasi', 'CostumerController::notifikasi');
 // Route Admin
 $routes->get('/Dashboard-Admin', 'AdminController::index');
 $routes->get('/User', 'AdminController::User');
+$routes->post('/User/update/(:num)', 'AdminController::edit_user/$1');
+$routes->get('/User/delete/(:num)', 'AdminController::delete_user/$1');
 $routes->get('/Produk-A', 'AdminController::produk');
 $routes->get('/Kategori-A', 'AdminController::kategori');
 $routes->get('/Pesanan-A', 'AdminController::Pesanan');
