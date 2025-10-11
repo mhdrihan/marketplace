@@ -331,7 +331,7 @@
                             </li>
                             <li><a data-toggle="collapse" data-target="#democrou" href="#">Shop</a>
                                 <ul id="democrou" class="collapse dropdown-header-top">
-                                    <li><a href="/produk">Product</a></li>
+                                    <li><a href="/produk-m">Product</a></li>
                                     <li><a href="/order">Order</a></li>
                                 </ul>
                             </li>

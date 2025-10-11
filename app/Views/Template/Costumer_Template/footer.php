@@ -28,7 +28,6 @@
                 <h5 class="fw-bold mb-3 text-white">Hubungi Kami</h5>
                 <p class="mb-1 small"><i class="fas fa-map-marker-alt me-2"></i>Jl. Contoh No.123, Jakarta</p>
                 <p class="mb-1 small"><i class="fas fa-phone me-2"></i>+62 812 3456 7890</p>
-                <p class="small"><i class="fas fa-envelope me-2"></i>support@bliblistyle.com</p>
 
                 <div class="social-links mt-3">
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
