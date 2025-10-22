@@ -40,6 +40,8 @@ class AuthController extends BaseController
 
     public function doLogin()
     {
+        $session = session();
+
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
 
@@ -56,7 +58,7 @@ class AuthController extends BaseController
             return redirect()->back()->with('error', 'Password salah!');
         }
 
-        $this->session->set([
+        $session->set([
             'user_id' => $user['user_id'],
             'name' => $user['name'],
             'username' => $user['username'],
@@ -64,6 +66,7 @@ class AuthController extends BaseController
             'role' => $user['role'],
             'logged_in' => true
         ]);
+        log_message('debug', 'Session setelah login: ' . json_encode($session->get()));
 
         if ($user['role'] == 'buyer') {
             return redirect()->to('/')->with('success', 'Selamat Berbelanja');
@@ -73,6 +76,7 @@ class AuthController extends BaseController
             return redirect()->to('/Dashboard-Admin');
         }
     }
+
 
 
     public function doRegister()
@@ -165,5 +169,14 @@ class AuthController extends BaseController
         $this->authModel->insert($data);
 
         return redirect()->to('/login')->with('success', 'Akun berhasil dibuat! Silakan login.');
+    }
+
+    public function logout()
+    {
+        $session = session();
+
+        $session->destroy();
+
+        return redirect()->to('/login')->with('success', 'Anda telah logout.');
     }
 }

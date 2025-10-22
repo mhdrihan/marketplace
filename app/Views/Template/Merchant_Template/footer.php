@@ -84,6 +84,28 @@
 <!-- tawk chat JS
         ============================================ -->
 <script src="/assets/js/Merchant/js/tawk-chat.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        $(document).ready(function () {
+                <?php if (session()->getFlashdata('error')): ?>
+                        Swal.fire({
+                                icon: 'error',
+                                title: 'Gagal!',
+                                text: '<?= session()->getFlashdata('error') ?>',
+                                confirmButtonText: 'OK'
+                        });
+                <?php elseif (session()->getFlashdata('success')): ?>
+                        Swal.fire({
+                                icon: 'success',
+                                title: 'Berhasil!',
+                                text: '<?= session()->getFlashdata('success') ?>',
+                                confirmButtonText: 'OK'
+                        });
+                <?php endif; ?>
+        });
+</script>
 </body>
 
 </html>

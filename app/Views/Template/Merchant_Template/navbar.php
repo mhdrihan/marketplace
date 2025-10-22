@@ -8,6 +8,7 @@
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                 <div class="header-top-menu">
+                    <a href="<?= base_url('/logout') ?>" class="btn btn-danger">Logout</a>
                     <ul class="nav navbar-nav notika-top-nav">
                         <li class="nav-item dropdown">
                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false"

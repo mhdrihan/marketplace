@@ -13,6 +13,7 @@ $routes->post('/register/add', 'AuthController::doRegister');
 $routes->get('/register-m', 'AuthController::register_m');
 $routes->post('/register-m/add', 'AuthController::doRegister_m');
 $routes->get('/Profile', 'CostumerController::Profile');
+$routes->get('/logout', 'AuthController::logout');
 
 
 // Route Costumer
@@ -34,13 +35,13 @@ $routes->get('/Sistem-A', 'AdminController::Sistem');
 
 
 // Route Merchant
-$routes->get('/dashboard-m', 'MerchantController::index');
-$routes->get('/ulasan', 'MerchantController::ulasan');
-$routes->get('/email', 'MerchantController::email');
-$routes->get('/produk-m', 'MerchantController::produk');
-$routes->get('/order', 'MerchantController::order');
-$routes->get('/analisis-p', 'MerchantController::analisisProduk');
-$routes->get('/analisis-o', 'MerchantController::analisisOrder');
+$routes->get('/dashboard-m', 'MerchantController::index', ['filter' => 'auth']);
+$routes->get('/ulasan', 'MerchantController::ulasan', ['filter' => 'auth']);
+$routes->get('/email', 'MerchantController::email', ['filter' => 'auth']);
+$routes->get('/produk-m', 'MerchantController::produk', ['filter' => 'auth']);
+$routes->get('/order', 'MerchantController::order', ['filter' => 'auth']);
+$routes->get('/analisis-p', 'MerchantController::analisisProduk', ['filter' => 'auth']);
+$routes->get('/analisis-o', 'MerchantController::analisisOrder', ['filter' => 'auth']);
 
 
 // Route Product

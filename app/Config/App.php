@@ -29,6 +29,10 @@ class App extends BaseConfig
      *
      * @var list<string>
      */
+
+    public string $sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler';
+    public string $sessionSavePath = WRITEPATH . 'session';
+    public int $sessionExpiration = 7200;
     public array $allowedHostnames = [];
 
     /**
