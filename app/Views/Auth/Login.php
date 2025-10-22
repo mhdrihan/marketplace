@@ -32,7 +32,7 @@
                 <button type="submit" class="btn mt-3">Login</button>
             </form>
             <div class="text-center fs-6">
-                <a href="#">Forget password?</a> or <a href="/register">Sign up</a>
+                <a href="/register-m">want to sell something?</a> or <a href="/register">Sign up</a>
             </div>
         </div>
     </div>

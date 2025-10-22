@@ -30,7 +30,14 @@ class AuthController extends BaseController
         echo view('Auth/Register', $data);
 
     }
-    
+
+    public function register_m()
+    {
+        $data['title'] = 'Register Merchant';
+
+        echo view('Auth/Register-M', $data);
+    }
+
     public function doLogin()
     {
         $username = $this->request->getPost('username');
@@ -61,7 +68,7 @@ class AuthController extends BaseController
         if ($user['role'] == 'buyer') {
             return redirect()->to('/')->with('success', 'Selamat Berbelanja');
         } elseif ($user['role'] == 'seller') {
-            return redirect()->to('/seller');
+            return redirect()->to('/dashboard-m');
         } else {
             return redirect()->to('/Dashboard-Admin');
         }
@@ -97,11 +104,9 @@ class AuthController extends BaseController
         ];
 
         if (!$this->validate($rules, $errors)) {
-            // Jika validasi gagal
             return redirect()->back()->withInput()->with('error', implode(', ', $validation->getErrors()));
         }
 
-        // Jika validasi berhasil
         $data = [
             'name' => $this->request->getPost('name'),
             'username' => $this->request->getPost('username'),
@@ -109,6 +114,52 @@ class AuthController extends BaseController
             'phone' => $this->request->getPost('phone'),
             'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
             'role' => 'buyer',
+        ];
+
+        $this->authModel->insert($data);
+
+        return redirect()->to('/login')->with('success', 'Akun berhasil dibuat! Silakan login.');
+    }
+
+    public function doRegister_m()
+    {
+        $validation = \Config\Services::validation();
+
+        $rules = [
+            'name' => 'required|min_length[3]',
+            'username' => 'required|min_length[3]|is_unique[users.username]',
+            'email' => 'required|valid_email|is_unique[users.email]',
+            'phone' => 'required|numeric|min_length[10]|max_length[15]',
+            'password' => 'required|min_length[6]',
+            'password_confirm' => 'required|matches[password]',
+        ];
+
+        $errors = [
+            'username' => [
+                'is_unique' => 'Username sudah digunakan.'
+            ],
+            'email' => [
+                'is_unique' => 'Email sudah terdaftar.'
+            ],
+            'password_confirm' => [
+                'matches' => 'Konfirmasi password tidak cocok.'
+            ],
+            'phone' => [
+                'matches' => 'Konfirmasi password tidak cocok.'
+            ]
+        ];
+
+        if (!$this->validate($rules, $errors)) {
+            return redirect()->back()->withInput()->with('error', implode(', ', $validation->getErrors()));
+        }
+
+        $data = [
+            'name' => $this->request->getPost('name'),
+            'username' => $this->request->getPost('username'),
+            'email' => $this->request->getPost('email'),
+            'phone' => $this->request->getPost('phone'),
+            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'role' => 'seller',
         ];
 
         $this->authModel->insert($data);

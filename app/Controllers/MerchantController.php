@@ -32,7 +32,7 @@ class MerchantController extends BaseController
     {
         echo view('Template/Merchant_Template/header');
         echo view('Template/Merchant_Template/navbar');
-        echo view('Merchant/Produk', );
+        echo view('Merchant/Produk');
         echo view('Template/Merchant_Template/footer');
     }
 

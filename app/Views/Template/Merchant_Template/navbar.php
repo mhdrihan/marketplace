@@ -384,7 +384,7 @@
                     </div>
                     <div id="Interface" class="tab-pane notika-tab-menu-bg animated flipInX">
                         <ul class="notika-main-menu-dropdown">
-                            <li><a href="/produk">Product</a>
+                            <li><a href="/produk-m">Product</a>
                             </li>
                             <li><a href="/order">Order</a>
                             </li>

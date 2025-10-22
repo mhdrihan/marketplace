@@ -10,6 +10,8 @@ $routes->get('/login', 'AuthController::login');
 $routes->post('/login/process', 'AuthController::doLogin');
 $routes->get('/register', 'AuthController::register');
 $routes->post('/register/add', 'AuthController::doRegister');
+$routes->get('/register-m', 'AuthController::register_m');
+$routes->post('/register-m/add', 'AuthController::doRegister_m');
 $routes->get('/Profile', 'CostumerController::Profile');
 
 
