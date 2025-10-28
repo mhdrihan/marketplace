@@ -4,19 +4,18 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ProductModel extends Model
+
+class ShopModel extends Model
 {
-    protected $table = 'products';
-    protected $primaryKey = 'product_id';
+    protected $table = 'shops';
+    protected $primaryKey = 'shop_id';
 
     protected $allowedFields = [
-        'shop_id',
-        'name',
+        'user_id',
+        'shop_name',
         'description',
-        'price',
-        'stock',
-        'category_id',
-        'image_url',
+        'address',
+        'logo',
         'status',
         'created_at',
         'updated_at'

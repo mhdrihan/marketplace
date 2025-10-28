@@ -18,56 +18,38 @@
                                     <tr>
                                         <th>ID Kategori</th>
                                         <th>Nama Kategori</th>
-                                        <th>Deskripsi</th>
-                                        <th>Status Kategori</th>
-                                        <th>Tanggal Dibuat / Diperbarui</th>
-                                        <th>Aksi</th>
+                                        <th>Status</th>
+                                        <th class="text-center">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>KTG001</td>
-                                        <td>Elektronik</td>
-                                        <td>Perangkat elektronik seperti smartphone, laptop, dan aksesoris.</td>
-                                        <td><label class="badge badge-success">Aktif</label></td>
-                                        <td>2024-01-10 / 2024-05-15</td>
-                                        <td>
-                                            <button class="btn btn-warning btn-sm" data-bs-toggle="modal"
-                                                data-bs-target="#editKategoriModal1"><i class="ti-pencil"></i></button>
-                                            <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
-                                                data-bs-target="#hapusKategoriModal1"><i class="ti-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>KTG002</td>
-                                        <td>Fashion</td>
-                                        <td>Pakaian, sepatu, dan aksesoris fashion lainnya.</td>
-                                        <td><label class="badge badge-secondary">Nonaktif</label></td>
-                                        <td>2023-11-20 / 2024-04-01</td>
-                                        <td>
-                                            <button class="btn btn-warning btn-sm" data-bs-toggle="modal"
-                                                data-bs-target="#editKategoriModal2"><i class="ti-pencil"></i></button>
-                                            <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
-                                                data-bs-target="#hapusKategoriModal2"><i class="ti-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>KTG003</td>
-                                        <td>Peralatan Rumah</td>
-                                        <td>Peralatan dan perlengkapan rumah tangga.</td>
-                                        <td><label class="badge badge-success">Aktif</label></td>
-                                        <td>2024-02-05 / 2024-06-01</td>
-                                        <td>
-                                            <button class="btn btn-warning btn-sm" data-bs-toggle="modal"
-                                                data-bs-target="#editKategoriModal3"><i class="ti-pencil"></i></button>
-                                            <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
-                                                data-bs-target="#hapusKategoriModal3"><i class="ti-trash"></i></button>
-                                        </td>
-                                    </tr>
+                                    <?php foreach ($categories as $category): ?>
+                                        <tr>
+                                            <td><?= $category['category_id'] ?></td>
+                                            <td><?= $category['name'] ?></td>
+                                            <td>
+                                                <?php if ($category['status'] === 'active'): ?>
+                                                    <span class="btn btn-success btn-sm">
+                                                        <i class="ti-check"></i>
+                                                    </span>
+                                                <?php else: ?>
+                                                    <span class="btn btn-danger btn-sm">
+                                                        <i class="ti-close"></i>
+                                                    </span>
+                                                <?php endif; ?>
+                                            </td>
+                                            <td class="text-center">
+                                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#editKategoriModal1"><i class="ti-pencil"></i></button>
+                                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#hapusKategoriModal1"><i class="ti-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <td colspan="6" class="text-end"><strong>Total Kategori: 3</strong></td>
+                                        <!-- <td colspan="6" class="text-end"><strong>Total Kategori: 3</strong></td> -->
                                     </tr>
                                 </tfoot>
                             </table>
@@ -89,31 +71,18 @@
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <form id="formTambahKategori">
-                    <div class="mb-3">
-                        <label class="form-label">ID Kategori</label>
-                        <input type="text" class="form-control" placeholder="Masukkan ID kategori" required />
-                    </div>
+                <form id="formTambahKategori" action="<?= base_url('Kategori/add_kategori') ?>" method="post">
+                    <?= csrf_field() ?>
                     <div class="mb-3">
                         <label class="form-label">Nama Kategori</label>
-                        <input type="text" class="form-control" placeholder="Masukkan nama kategori" required />
+                        <input type="text" name="name" class="form-control" placeholder="Masukkan nama kategori"
+                            required />
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Deskripsi</label>
-                        <textarea class="form-control" rows="3" placeholder="Deskripsi kategori" required></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Status Kategori</label>
-                        <select class="form-control" required>
-                            <option value="aktif">Aktif</option>
-                            <option value="nonaktif">Nonaktif</option>
-                        </select>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
                     </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                <button type="submit" form="formTambahKategori" class="btn btn-primary">Simpan</button>
             </div>
         </div>
     </div>

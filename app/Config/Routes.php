@@ -28,6 +28,7 @@ $routes->post('/User/update/(:num)', 'AdminController::edit_user/$1');
 $routes->get('/User/delete/(:num)', 'AdminController::delete_user/$1');
 $routes->get('/Produk-A', 'AdminController::produk');
 $routes->get('/Kategori-A', 'AdminController::kategori');
+$routes->post('/Kategori/add_kategori', 'AdminController::add_Kategori');
 $routes->get('/Pesanan-A', 'AdminController::Pesanan');
 $routes->get('/Keuangan-A', 'AdminController::Keuangan');
 $routes->get('/Promosi-A', 'AdminController::Promosi');
@@ -36,6 +37,7 @@ $routes->get('/Sistem-A', 'AdminController::Sistem');
 
 // Route Merchant
 $routes->get('/dashboard-m', 'MerchantController::index', ['filter' => 'auth']);
+$routes->post('/shop/add_shop', 'MerchantController::add_shop');
 $routes->get('/ulasan', 'MerchantController::ulasan', ['filter' => 'auth']);
 $routes->get('/email', 'MerchantController::email', ['filter' => 'auth']);
 $routes->get('/produk-m', 'MerchantController::produk', ['filter' => 'auth']);

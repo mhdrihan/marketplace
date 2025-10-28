@@ -1,3 +1,57 @@
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addShopModal">
+    <i class="bi bi-shop"></i> Tambah Toko
+</button>
+
+<!-- Modal Tambah Toko -->
+<div class="modal fade" id="addShopModal" tabindex="-1" aria-labelledby="addShopModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="addShopModalLabel">Tambah Toko Baru</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+
+            <form action="<?= base_url('shop/add_shop'); ?>" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+
+                    <div class="mb-3">
+                        <label for="shop_name" class="form-label">Nama Toko</label>
+                        <input type="text" class="form-control" id="shop_name" name="shop_name"
+                            placeholder="Masukkan nama toko" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Deskripsi</label>
+                        <textarea class="form-control" id="description" name="description" rows="3"
+                            placeholder="Tuliskan deskripsi toko"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Alamat</label>
+                        <input type="text" class="form-control" id="address" name="address"
+                            placeholder="Masukkan alamat toko" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="logo" class="form-label">Logo Toko</label>
+                        <input class="form-control" type="file" id="logo" name="logo" accept="image/*">
+                        <small class="text-muted">Ukuran maksimal 2MB (jpg, png, jpeg)</small>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <button type="submit" class="btn btn-success">Simpan</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
 <!-- Start Status area -->
 <div class="notika-status-area">
     <div class="container">

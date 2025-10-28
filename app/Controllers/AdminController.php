@@ -2,10 +2,12 @@
 
 namespace App\Controllers;
 use App\Models\AuthModel;
+use App\Models\CategoryModel;
 
 class AdminController extends BaseController
 {
     protected $authModel;
+    protected $categoryModel;
     protected $session;
 
     protected $helpers = ['form', 'url', 'session'];
@@ -13,6 +15,7 @@ class AdminController extends BaseController
     public function __construct()
     {
         $this->authModel = new AuthModel();
+        $this->categoryModel = new CategoryModel();
         $this->session = session();
     }
 
@@ -112,11 +115,31 @@ class AdminController extends BaseController
 
     public function Kategori()
     {
+        $data['categories'] = $this->categoryModel->findAll();
+
         echo view('Template/Admin_Template/header');
         echo view('Template/Admin_Template/navbar');
         echo view('Template/Admin_Template/sidebar');
-        echo view('Admin/Manajemen-Kategori');
+        echo view('Admin/Manajemen-Kategori', $data);
         echo view('Template/Admin_Template/footer');
+    }
+
+    public function add_Kategori()
+    {
+        $data = [
+            'name' => $this->request->getPost('name'),
+            'status' => 'active',
+        ];
+
+        if (empty($data['name'])) {
+            return redirect()->back()->withInput()->with('error', 'Nama kategori harus diisi.');
+        }
+
+        if ($this->categoryModel->insert($data)) {
+            return redirect()->to('/Kategori-A')->with('success', 'Kategori berhasil ditambahkan!');
+        } else {
+            return redirect()->back()->withInput()->with('error', 'Gagal menambahkan kategori.');
+        }
     }
 
     public function Pesanan()
