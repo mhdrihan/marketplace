@@ -5,8 +5,8 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
                     <div class="website-traffic-ctn">
-                        <h2><span class="counter">50,000</span></h2>
-                        <p>Total Website Traffics</p>
+                        <h2><span class="counter">50</span></h2>
+                        <p>Total Penjualan Hari Ini</p>
                     </div>
                     <div class="sparkline-bar-stats1">9,4,8,6,5,6,4,8,3,5,9,5</div>
                 </div>
@@ -14,8 +14,8 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
                     <div class="website-traffic-ctn">
-                        <h2><span class="counter">90,000</span>k</h2>
-                        <p>Website Impressions</p>
+                        <h2><span class="counter">908</span>k</h2>
+                        <p>Total Transaksi Bulan Ini</p>
                     </div>
                     <div class="sparkline-bar-stats2">1,4,8,3,5,6,4,8,3,3,9,5</div>
                 </div>
@@ -23,8 +23,8 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
                     <div class="website-traffic-ctn">
-                        <h2>$<span class="counter">40,000</span></h2>
-                        <p>Total Online Sales</p>
+                        <h2>$<span class="counter">40</span></h2>
+                        <p>Produk Aktif di Etalase</p>
                     </div>
                     <div class="sparkline-bar-stats3">4,2,8,2,5,6,3,8,3,5,9,5</div>
                 </div>
@@ -32,8 +32,8 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                 <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
                     <div class="website-traffic-ctn">
-                        <h2><span class="counter">1,000</span></h2>
-                        <p>Total Support Tickets</p>
+                        <h2><span class="counter">10</span></h2>
+                        <p>Pesanan Baru Hari Ini</p>
                     </div>
                     <div class="sparkline-bar-stats4">2,4,8,4,5,7,4,7,3,5,7,5</div>
                 </div>
@@ -46,56 +46,51 @@
 <div class="sale-statistic-area">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9 col-md-8 col-sm-7 col-xs-12">
+            <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12">
                 <div class="sale-statistic-inner notika-shadow mg-tb-30">
                     <div class="curved-inner-pro">
                         <div class="curved-ctn">
-                            <h2>Sales Statistics</h2>
-                            <p>Vestibulum purus quam scelerisque, mollis nonummy metus</p>
+                            <h2>Statistik Penjualan</h2>
+                            <p>Grafik performa penjualan dalam 30 hari terakhir</p>
                         </div>
                     </div>
                     <div id="curved-line-chart" class="flot-chart-sts flot-chart"></div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
                 <div class="statistic-right-area notika-shadow mg-tb-30 sm-res-mg-t-0">
                     <div class="past-day-statis">
-                        <h2>For The Past 30 Days</h2>
-                        <p>Fusce eget dolor id justo luctus the commodo vel pharetra nisi. Donec velit of libero.
-                        </p>
+                        <h2>Produk Terlaris 30 Hari Terakhir</h2>
+                        <p>Daftar produk dengan penjualan tertinggi selama periode terakhir.</p>
                     </div>
-                    <div class="dash-widget-visits"></div>
-                    <div class="past-statistic-an">
-                        <div class="past-statistic-ctn">
-                            <h3><span class="counter">3,20,000</span></h3>
-                            <p>Page Views</p>
-                        </div>
-                        <div class="past-statistic-graph">
-                            <div class="stats-bar"></div>
-                        </div>
-                    </div>
-                    <div class="past-statistic-an">
-                        <div class="past-statistic-ctn">
-                            <h3><span class="counter">1,03,000</span></h3>
-                            <p>Total Clicks</p>
-                        </div>
-                        <div class="past-statistic-graph">
-                            <div class="stats-line"></div>
-                        </div>
-                    </div>
-                    <div class="past-statistic-an">
-                        <div class="past-statistic-ctn">
-                            <h3><span class="counter">24,00,000</span></h3>
-                            <p>Site Visitors</p>
-                        </div>
-                        <div class="past-statistic-graph">
-                            <div class="stats-bar-2"></div>
-                        </div>
-                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="fas fa-trophy" style="color: gold; margin-right: 10px;"></i>
+                            Photocard BTS - RM
+                            <span class="badge bg-success float-end">38x</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-medal" style="color: silver; margin-right: 10px;"></i>
+                            EXO Kai Ver.2
+                            <span class="badge bg-info float-end">31x</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-award" style="color: #cd7f32; margin-right: 10px;"></i>
+                            Twice Sana
+                            <span class="badge bg-warning float-end">25x</span>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-star" style="color: #3498db; margin-right: 10px;"></i>
+                            Blackpink Lisa
+                            <span class="badge bg-primary float-end">20x</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
 <!-- End Sale Statistic area-->
 <!-- Start Email Statistic area-->
@@ -243,43 +238,47 @@
                     <div class="rc-it-ltd">
                         <div class="recent-items-ctn">
                             <div class="recent-items-title">
-                                <h2>Recent Items</h2>
+                                <h2>Info Pesanan Barang</h2>
                             </div>
                         </div>
                         <div class="recent-items-inn">
                             <table class="table table-inner table-vmiddle">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
-                                        <th>Name</th>
-                                        <th style="width: 60px">Price</th>
+                                        <th>Nomor Resi</th>
+                                        <th>Nama Produk</th>
+                                        <th style="width: 80px">Detail</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="f-500 c-cyan">4555</td>
-                                        <td>Samsung Galaxy Mega</td>
-                                        <td class="f-500 c-cyan">$921</td>
+                                        <td class="f-500 c-cyan">JN0123456789</td>
+                                        <td>Photocard BTS - RM</td>
+                                        <td class="f-500 c-cyan"><a href="#" class="btn btn-sm btn-primary">Detail</a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td class="f-500 c-cyan">4556</td>
-                                        <td>Huawei Ascend P6</td>
-                                        <td class="f-500 c-cyan">$240</td>
+                                        <td class="f-500 c-cyan">POS123456789</td>
+                                        <td>EXO Kai Ver.2</td>
+                                        <td class="f-500 c-cyan"><a href="#" class="btn btn-sm btn-info">Detail</a></td>
                                     </tr>
                                     <tr>
-                                        <td class="f-500 c-cyan">8778</td>
-                                        <td>HTC One M8</td>
-                                        <td class="f-500 c-cyan">$400</td>
+                                        <td class="f-500 c-cyan">JNT987654321</td>
+                                        <td>Twice Sana</td>
+                                        <td class="f-500 c-cyan"><a href="#" class="btn btn-sm btn-success">Detail</a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td class="f-500 c-cyan">5667</td>
-                                        <td>Samsung Galaxy Alpha</td>
-                                        <td class="f-500 c-cyan">$870</td>
+                                        <td class="f-500 c-cyan">TIKI456789012</td>
+                                        <td>Blackpink Lisa</td>
+                                        <td class="f-500 c-cyan"><a href="#" class="btn btn-sm btn-warning">Detail</a>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td class="f-500 c-cyan">7886</td>
-                                        <td>LG G3</td>
-                                        <td class="f-500 c-cyan">$790</td>
+                                        <td class="f-500 c-cyan">SICEPAT789012</td>
+                                        <td>Photocard BTS - Jin</td>
+                                        <td class="f-500 c-cyan"><a href="#" class="btn btn-sm btn-danger">Detail</a>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -412,7 +411,7 @@
                 <div class="notika-chat-list notika-shadow mg-t-30 tb-res-ds-n dk-res-ds">
                     <div class="realtime-ctn">
                         <div class="realtime-title">
-                            <h2>Chat Box</h2>
+                            <h2>Chat Pembeli & Admin</h2>
                         </div>
                     </div>
                     <div class="card-box">
@@ -421,85 +420,49 @@
                                 <ul class="conversation-list">
                                     <li class="clearfix">
                                         <div class="chat-avatar">
-                                            <img src="/assets/img/Merchant/img/post/1.jpg" alt="male">
-                                            <i>10:00</i>
+                                            <img src="/assets/img/Merchant/img/post/1.jpg" alt="Pembeli 1">
+                                            <i>10:05</i>
                                         </div>
                                         <div class="conversation-text">
                                             <div class="ctext-wrap">
-                                                <i>John Deo</i>
-                                                <p>
-                                                    Hello!
-                                                </p>
+                                                <i>Pembeli 1</i>
+                                                <p>Halo kak, barang saya kapan dikirim ya?</p>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="clearfix odd">
                                         <div class="chat-avatar">
-                                            <img src="/assets/img/Merchant/img/post/2.jpg" alt="Female">
-                                            <i>10:01</i>
+                                            <img src="/assets/img/Merchant/img/post/2.jpg" alt="Admin">
+                                            <i>10:07</i>
                                         </div>
                                         <div class="conversation-text">
                                             <div class="ctext-wrap chat-widgets-cn">
-                                                <i>Smith</i>
-                                                <p>
-                                                    Hi, How are you? What about our next meeting?
-                                                </p>
+                                                <i>Admin</i>
+                                                <p>Hai, pesanan Anda sudah dikemas dan akan dikirim hari ini 😊</p>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="clearfix">
                                         <div class="chat-avatar">
-                                            <img src="/assets/img/Merchant/img/post/1.jpg" alt="male">
-                                            <i>10:01</i>
+                                            <img src="/assets/img/Merchant/img/post/1.jpg" alt="Pembeli 1">
+                                            <i>10:10</i>
                                         </div>
                                         <div class="conversation-text">
                                             <div class="ctext-wrap">
-                                                <i>John Deo</i>
-                                                <p>
-                                                    Yeah everything is fine
-                                                </p>
+                                                <i>Pembeli 1</i>
+                                                <p>Makasih kak, saya tunggu ya!</p>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="clearfix odd">
                                         <div class="chat-avatar">
-                                            <img src="/assets/img/Merchant/img/post/2.jpg" alt="male">
-                                            <i>10:02</i>
+                                            <img src="/assets/img/Merchant/img/post/2.jpg" alt="Admin">
+                                            <i>10:12</i>
                                         </div>
                                         <div class="conversation-text">
                                             <div class="ctext-wrap chat-widgets-cn">
-                                                <i>Smith</i>
-                                                <p>
-                                                    Wow that's great
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="clearfix">
-                                        <div class="chat-avatar">
-                                            <img src="/assets/img/Merchant/img/post/1.jpg" alt="male">
-                                            <i>10:01</i>
-                                        </div>
-                                        <div class="conversation-text">
-                                            <div class="ctext-wrap">
-                                                <i>John Deo</i>
-                                                <p>
-                                                    Doing Better i am thinking about that..
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="clearfix odd">
-                                        <div class="chat-avatar">
-                                            <img src="/assets/img/Merchant/img/post/2.jpg" alt="male">
-                                            <i>10:02</i>
-                                        </div>
-                                        <div class="conversation-text">
-                                            <div class="ctext-wrap chat-widgets-cn">
-                                                <i>Smith</i>
-                                                <p>
-                                                    Wow, You also tallent man...
-                                                </p>
+                                                <i>Admin</i>
+                                                <p>Sama-sama! Jika ada pertanyaan lain, langsung chat aja ya 😉</p>
                                             </div>
                                         </div>
                                     </li>
@@ -511,11 +474,11 @@
                                         <div class="form-group todo-flex">
                                             <div class="nk-int-st">
                                                 <input type="text" class="form-control chat-input"
-                                                    placeholder="Enter your text">
+                                                    placeholder="Tulis pesan...">
                                             </div>
                                             <div class="chat-send">
                                                 <button type="submit"
-                                                    class="btn btn-md btn-primary btn-block notika-chat-btn">Send</button>
+                                                    class="btn btn-md btn-primary btn-block notika-chat-btn">Kirim</button>
                                             </div>
                                         </div>
                                     </div>

@@ -1,219 +1,117 @@
-<!-- Start Status area -->
-<div class="notika-status-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2><span class="counter">50,000</span></h2>
-                        <p>Total Website Traffics</p>
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-8 col-md-7 col-sm-12">
+            <div class="card shadow-sm border-0 mb-4" style="background-color: #fff;">
+                <div class="card-body">
+                    <h4 class="fw-bold mb-4 text-center text-dark">Ulasan</h4>
+                    <div class="review-item mb-3 border-bottom pb-3">
+                        <div class="d-flex">
+                            <img src="/assets/img/Merchant/img/post/1.jpg" alt="Pembeli 1" class="rounded me-3"
+                                width="60" height="60">
+                            <div>
+                                <h6 class="fw-bold mb-1">Pembeli 1 - Photocard BTS - RM</h6>
+                                <div class="rating mb-2">
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star-half-alt" style="color: gold;"></i>
+                                    <span>(4.5)</span>
+                                </div>
+                                <p class="mb-1">Barangnya bagus banget, sesuai gambar! Pengiriman juga cepat. Makasih ya
+                                    seller 😊</p>
+                                <p id="response-1"><strong>Respons Penjual:</strong> Terima kasih atas ulasannya! Senang
+                                    bisa melayani Anda. Sampai jumpa di pembelian selanjutnya 😉</p>
+                                <button class="btn btn-sm btn-primary" onclick="editResponse(1)">Edit Respons</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sparkline-bar-stats1">9,4,8,6,5,6,4,8,3,5,9,5</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2><span class="counter">90,000</span>k</h2>
-                        <p>Website Impressions</p>
+
+                    <div class="review-item mb-3 border-bottom pb-3">
+                        <div class="d-flex">
+                            <img src="/assets/img/Merchant/img/post/2.jpg" alt="Pembeli 2" class="rounded me-3"
+                                width="60" height="60">
+                            <div>
+                                <h6 class="fw-bold mb-1">Pembeli 2 - EXO Kai Ver.2</h6>
+                                <div class="rating mb-2">
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="far fa-star" style="color: gold;"></i>
+                                    <span>(4.0)</span>
+                                </div>
+                                <p class="mb-1">Produk original, packing rapi. Cuma pengirimannya agak lama, tapi
+                                    overall oke.</p>
+                                <p id="response-2"><strong>Respons Penjual:</strong> Maaf atas keterlambatan pengiriman.
+                                    Kami akan perbaiki untuk kedepannya. Terima kasih ya!</p>
+                                <button class="btn btn-sm btn-primary" onclick="editResponse(2)">Edit Respons</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sparkline-bar-stats2">1,4,8,3,5,6,4,8,3,3,9,5</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2>$<span class="counter">40,000</span></h2>
-                        <p>Total Online Sales</p>
+
+                    <div class="review-item mb-3 border-bottom pb-3">
+                        <div class="d-flex">
+                            <img src="/assets/img/Merchant/img/post/5.jpg" alt="Pembeli 5" class="rounded me-3"
+                                width="60" height="60">
+                            <div>
+                                <h6 class="fw-bold mb-1">Pembeli 5 - Photocard BTS - Jin</h6>
+                                <div class="rating mb-2">
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <i class="fas fa-star" style="color: gold;"></i>
+                                    <span>(5.0)</span>
+                                </div>
+                                <p class="mb-1">Super puas! Barang original dan packing aman. Seller top markotop!</p>
+                                <p id="response-5" style="display: none;"></p>
+                                <button class="btn btn-sm btn-success" onclick="respondToReview(5)">Berikan
+                                    Respons</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sparkline-bar-stats3">4,2,8,2,5,6,3,8,3,5,9,5</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-                <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
-                    <div class="website-traffic-ctn">
-                        <h2><span class="counter">1,000</span></h2>
-                        <p>Total Support Tickets</p>
+
+                    <div class="text-center mt-4">
+                        <a href="#" class="text-decoration-none fw-semibold">Lihat Semua Ulasan</a>
                     </div>
-                    <div class="sparkline-bar-stats4">2,4,8,4,5,7,4,7,3,5,7,5</div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- End Status area-->
-<!-- Start Sale Statistic area-->
-<div class="sale-statistic-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="statistic-right-area notika-shadow mg-tb-30 sm-res-mg-t-0">
-                    <div class="past-day-statis">
-                        <h2>For The Past 30 Days</h2>
-                        <p>Fusce eget dolor id justo luctus the commodo vel pharetra nisi. Donec velit of libero.</p>
+        <div class="col-lg-4 col-md-5 col-sm-12">
+            <div class="email-statis-inner notika-shadow" style="background-color: #fff; padding: 20px;">
+                <div class="email-ctn-round">
+                    <div class="email-rdn-hd text-center mb-3">
+                        <h5 class="fw-bold text-dark">Statistik Rating Produk</h5>
                     </div>
-                    <div class="dash-widget-visits"></div>
-                    <div class="past-statistic-an">
-                        <div class="past-statistic-ctn">
-                            <h3><span class="counter">3,20,000</span></h3>
-                            <p>Page Views</p>
+                    <div class="email-statis-wrap text-center mb-4">
+                        <div class="email-round-nock">
+                            <input type="text" class="knob" value="0" data-rel="85" data-linecap="round"
+                                data-width="130" data-bgcolor="#E4E4E4" data-fgcolor="#006eff" data-thickness=".10"
+                                data-readonly="true">
                         </div>
-                        <div class="past-statistic-graph">
-                            <div class="stats-bar"></div>
+                        <div class="email-ctn-nock mt-2">
+                            <p class="fw-semibold text-secondary">Rating Rata-Rata</p>
                         </div>
                     </div>
-                    <div class="past-statistic-an">
-                        <div class="past-statistic-ctn">
-                            <h3><span class="counter">1,03,000</span></h3>
-                            <p>Total Clicks</p>
+                    <div class="email-round-gp d-flex justify-content-around">
+                        <div class="email-round-pro text-center">
+                            <input type="text" class="knob" value="0" data-rel="60" data-width="90"
+                                data-bgcolor="#E4E4E4" data-fgcolor="#006eff" data-thickness=".10" data-readonly="true"
+                                disabled>
+                            <p>5 Bintang</p>
                         </div>
-                        <div class="past-statistic-graph">
-                            <div class="stats-line"></div>
+                        <div class="email-round-pro text-center">
+                            <input type="text" class="knob" value="0" data-rel="25" data-width="90"
+                                data-bgcolor="#E4E4E4" data-fgcolor="#006eff" data-thickness=".10" data-readonly="true"
+                                disabled>
+                            <p>4 Bintang</p>
                         </div>
-                    </div>
-                    <div class="past-statistic-an">
-                        <div class="past-statistic-ctn">
-                            <h3><span class="counter">24,00,000</span></h3>
-                            <p>Site Visitors</p>
-                        </div>
-                        <div class="past-statistic-graph">
-                            <div class="stats-bar-2"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="email-statis-inner notika-shadow mg-tb-30 sm-res-mg-t-0">
-                    <div class="email-ctn-round">
-                        <div class="email-rdn-hd">
-                            <h2>Email Statistics</h2>
-                        </div>
-                        <div class="email-statis-wrap">
-                            <div class="email-round-nock">
-                                <input type="text" class="knob" value="0" data-rel="55" data-linecap="round"
-                                    data-width="130" data-bgcolor="#E4E4E4" data-fgcolor="#5AA6F8" data-thickness=".10"
-                                    data-readonly="true">
-                            </div>
-                            <div class="email-ctn-nock">
-                                <p>Total Emails Sent</p>
-                            </div>
-                        </div>
-                        <div class="email-round-gp">
-                            <div class="email-round-pro">
-                                <div class="email-signle-gp">
-                                    <input type="text" class="knob" value="0" data-rel="75" data-linecap="round"
-                                        data-width="90" data-bgcolor="#E4E4E4" data-fgcolor="#5AA6F8"
-                                        data-thickness=".10" data-readonly="true" disabled>
-                                </div>
-                                <div class="email-ctn-nock">
-                                    <p>Bounce Rate</p>
-                                </div>
-                            </div>
-                            <div class="email-round-pro">
-                                <div class="email-signle-gp">
-                                    <input type="text" class="knob" value="0" data-rel="35" data-linecap="round"
-                                        data-width="90" data-bgcolor="#E4E4E4" data-fgcolor="#5AA6F8"
-                                        data-thickness=".10" data-readonly="true" disabled>
-                                </div>
-                                <div class="email-ctn-nock">
-                                    <p>Total Opened</p>
-                                </div>
-                            </div>
-                            <div class="email-round-pro sm-res-ds-n lg-res-mg-bl">
-                                <div class="email-signle-gp">
-                                    <input type="text" class="knob" value="0" data-rel="45" data-linecap="round"
-                                        data-width="90" data-bgcolor="#E4E4E4" data-fgcolor="#5AA6F8"
-                                        data-thickness=".10" data-readonly="true" disabled>
-                                </div>
-                                <div class="email-ctn-nock">
-                                    <p>Total Ignored</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class="recent-post-wrapper notika-shadow mg-tb-30 sm-res-mg-t-0 tb-res-ds-n dk-res-ds">
-                    <div class="recent-post-ctn">
-                        <div class="recent-post-title">
-                            <h2>Recent Posts</h2>
-                        </div>
-                    </div>
-                    <div class="recent-post-items">
-                        <div class="recent-post-signle rct-pt-mg-wp">
-                            <a href="#">
-                                <div class="recent-post-flex">
-                                    <div class="recent-post-img">
-                                        <img src="img/post/2.jpg" alt="" />
-                                    </div>
-                                    <div class="recent-post-it-ctn">
-                                        <h2>Smith</h2>
-                                        <p>Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="recent-post-signle">
-                            <a href="#">
-                                <div class="recent-post-flex rct-pt-mg">
-                                    <div class="recent-post-img">
-                                        <img src="img/post/1.jpg" alt="" />
-                                    </div>
-                                    <div class="recent-post-it-ctn">
-                                        <h2>John Deo</h2>
-                                        <p>Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="recent-post-signle">
-                            <a href="#">
-                                <div class="recent-post-flex rct-pt-mg">
-                                    <div class="recent-post-img">
-                                        <img src="img/post/4.jpg" alt="" />
-                                    </div>
-                                    <div class="recent-post-it-ctn">
-                                        <h2>Malika</h2>
-                                        <p>Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="recent-post-signle">
-                            <a href="#">
-                                <div class="recent-post-flex rct-pt-mg">
-                                    <div class="recent-post-img">
-                                        <img src="img/post/2.jpg" alt="" />
-                                    </div>
-                                    <div class="recent-post-it-ctn">
-                                        <h2>Smith</h2>
-                                        <p>Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="recent-post-signle">
-                            <a href="#">
-                                <div class="recent-post-flex rct-pt-mg">
-                                    <div class="recent-post-img">
-                                        <img src="img/post/1.jpg" alt="" />
-                                    </div>
-                                    <div class="recent-post-it-ctn">
-                                        <h2>John Deo</h2>
-                                        <p>Nunc quis diam diamurabitur at dolor elementum, dictum turpis vel</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="recent-post-signle">
-                            <a href="#">
-                                <div class="recent-post-flex rc-ps-vw">
-                                    <div class="recent-post-line rct-pt-mg">
-                                        <p>View All</p>
-                                    </div>
-                                </div>
-                            </a>
+                        <div class="email-round-pro text-center">
+                            <input type="text" class="knob" value="0" data-rel="10" data-width="90"
+                                data-bgcolor="#E4E4E4" data-fgcolor="#006eff" data-thickness=".10" data-readonly="true"
+                                disabled>
+                            <p>3 Bintang</p>
                         </div>
                     </div>
                 </div>

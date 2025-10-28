@@ -160,6 +160,8 @@
                         <option value="makanan">Makanan</option>
                         <option value="minuman">Minuman</option>
                         <option value="elektronik">Elektronik</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="kecantikan">Kecantikan</option>
                         <!-- Tambahkan kategori lain jika perlu -->
                     </select>
                 </div>
@@ -211,6 +213,8 @@
                         <option value="makanan">Makanan</option>
                         <option value="minuman">Minuman</option>
                         <option value="elektronik">Elektronik</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="kecantikan">Kecantikan</option>
                         <!-- Tambahkan kategori lain jika perlu -->
                     </select>
                 </div>
