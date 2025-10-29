@@ -35,36 +35,21 @@
             <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview">
               <div class="row">
                 <div class="col-sm-12">
-                  <div class="statistics-details d-flex align-items-center justify-content-between">
+                  <div class="statistics-details d-flex align-items-center justify-content-around gap-3">
                     <div>
-                      <p class="statistics-title">Bounce Rate</p>
-                      <h3 class="rate-percentage">32.53%</h3>
+                      <p class="statistics-title">Jumlah Penjual</p>
+                      <h3 class="rate-percentage">32.53</h3>
                       <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>-0.5%</span></p>
                     </div>
                     <div>
-                      <p class="statistics-title">Page Views</p>
+                      <p class="statistics-title">Jumlah Pembeli</p>
                       <h3 class="rate-percentage">7,682</h3>
                       <p class="text-success d-flex"><i class="mdi mdi-menu-up"></i><span>+0.1%</span></p>
                     </div>
                     <div>
-                      <p class="statistics-title">New Sessions</p>
-                      <h3 class="rate-percentage">68.8</h3>
-                      <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
-                    </div>
-                    <div class="d-none d-md-block">
-                      <p class="statistics-title">Avg. Time on Site</p>
-                      <h3 class="rate-percentage">2m:35s</h3>
-                      <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>+0.8%</span></p>
-                    </div>
-                    <div class="d-none d-md-block">
-                      <p class="statistics-title">New Sessions</p>
-                      <h3 class="rate-percentage">68.8</h3>
-                      <p class="text-danger d-flex"><i class="mdi mdi-menu-down"></i><span>68.8</span></p>
-                    </div>
-                    <div class="d-none d-md-block">
-                      <p class="statistics-title">Avg. Time on Site</p>
-                      <h3 class="rate-percentage">2m:35s</h3>
-                      <p class="text-success d-flex"><i class="mdi mdi-menu-down"></i><span>+0.8%</span></p>
+                      <p class="statistics-title">Akun yang Aktif</p>
+                      <h3 class="rate-percentage">1,250</h3>
+                      <p class="text-success d-flex"><i class="mdi mdi-menu-up"></i><span>+2.3%</span></p>
                     </div>
                   </div>
                 </div>
@@ -77,31 +62,31 @@
                         <div class="card-body">
                           <div class="d-sm-flex justify-content-between align-items-start">
                             <div>
-                              <h4 class="card-title card-title-dash">Market Overview</h4>
-                              <p class="card-subtitle card-subtitle-dash">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit</p>
+                              <h4 class="card-title card-title-dash">Statistik Penjualan</h4>
+                              <p class="card-subtitle card-subtitle-dash">Overview penjualan untuk periode berbeda</p>
                             </div>
                             <div>
                               <div class="dropdown">
                                 <button class="btn btn-light dropdown-toggle toggle-dark btn-lg mb-0 me-0" type="button"
                                   id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true"
-                                  aria-expanded="false"> This month </button>
+                                  aria-expanded="false"> Pilih Periode </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                  <h6 class="dropdown-header">Settings</h6>
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
+                                  <h6 class="dropdown-header">Pilih Periode</h6>
+                                  <a class="dropdown-item" href="#" onclick="updateSalesData('last7days')">7 Hari
+                                    Kebelakang</a>
+                                  <a class="dropdown-item" href="#" onclick="updateSalesData('thismonth')">Per Bulan</a>
+                                  <a class="dropdown-item" href="#" onclick="updateSalesData('thisyear')">Per Tahun</a>
                                   <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Separated link</a>
+                                  <a class="dropdown-item" href="#">Rentang Kustom</a>
                                 </div>
                               </div>
                             </div>
                           </div>
                           <div class="d-sm-flex align-items-center mt-1 justify-content-between">
                             <div class="d-sm-flex align-items-center mt-4 justify-content-between">
-                              <h2 class="me-2 fw-bold">$36,2531.00</h2>
+                              <h2 class="me-2 fw-bold" id="salesAmount">$36,2531.00</h2>
                               <h4 class="me-2">USD</h4>
-                              <h4 class="text-success">(+1.37%)</h4>
+                              <h4 class="text-success" id="salesChange">(+1.37%)</h4>
                             </div>
                             <div class="me-3">
                               <div id="marketingOverview-legend"></div>
