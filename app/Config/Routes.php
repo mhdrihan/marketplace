@@ -29,6 +29,7 @@ $routes->get('/User/delete/(:num)', 'AdminController::delete_user/$1');
 $routes->get('/Produk-A', 'AdminController::produk');
 $routes->get('/Kategori-A', 'AdminController::kategori');
 $routes->post('/Kategori/add_kategori', 'AdminController::add_Kategori');
+$routes->post('/Kategori/update/(:num)', 'AdminController::edit_Kategori/$1');
 $routes->get('/Pesanan-A', 'AdminController::Pesanan');
 $routes->get('/Keuangan-A', 'AdminController::Keuangan');
 $routes->get('/Promosi-A', 'AdminController::Promosi');

@@ -142,6 +142,31 @@ class AdminController extends BaseController
         }
     }
 
+    public function edit_Kategori($id)
+    {
+        $data = [
+            'name' => $this->request->getPost('name'),
+            'status' => $this->request->getPost('status'),
+        ];
+
+        if (empty($data['name'])) {
+            return redirect()->back()->with('error', 'Nama kategori harus diisi.');
+        }
+
+        $category = $this->categoryModel->find($id);
+        if (!$category) {
+            return redirect()->to('/Kategori-A')->with('error', 'Kategori tidak ditemukan.');
+        }
+
+        $update = $this->categoryModel->update($id, $data);
+
+        if ($update) {
+            return redirect()->to('/Kategori-A')->with('success', 'Kategori berhasil diperbarui!');
+        } else {
+            return redirect()->back()->withInput()->with('error', 'Gagal memperbarui kategori.');
+        }
+    }
+
     public function Pesanan()
     {
         echo view('Template/Admin_Template/header');
