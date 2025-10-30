@@ -1,7 +1,3 @@
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addShopModal">
-    <i class="bi bi-shop"></i> Tambah Toko
-</button>
-
 <!-- Modal Tambah Toko -->
 <div class="modal fade" id="addShopModal" tabindex="-1" aria-labelledby="addShopModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -37,13 +33,14 @@
                     <div class="mb-3">
                         <label for="logo" class="form-label">Logo Toko</label>
                         <input class="form-control" type="file" id="logo" name="logo" accept="image/*">
-                        <small class="text-muted">Ukuran maksimal 2MB (jpg, png, jpeg)</small>
+                        <small class="text-muted">Ukuran maksimal 2MB (jpg, png,
+                            jpeg)</small>
                     </div>
 
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
                     <button type="submit" class="btn btn-success">Simpan</button>
                 </div>
             </form>
@@ -51,7 +48,6 @@
         </div>
     </div>
 </div>
-
 <!-- Start Status area -->
 <div class="notika-status-area">
     <div class="container">

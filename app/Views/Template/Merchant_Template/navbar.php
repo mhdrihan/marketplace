@@ -324,6 +324,7 @@
                                 <ul class="collapse dropdown-header-top">
                                     <li><a href="/dashboard-m">Dashboard</a></li>
                                     <li><a href="/ulasan">Ulasan</a></li>
+                                    <li></li>
                                 </ul>
                             <li><a data-toggle="collapse" data-target="#demoevent" href="#">Email</a>
                                 <ul id="demoevent" class="collapse dropdown-header-top">
@@ -385,6 +386,15 @@
                     </div>
                     <div id="Interface" class="tab-pane notika-tab-menu-bg animated flipInX">
                         <ul class="notika-main-menu-dropdown">
+                            <li>
+                                <?php $shop = $shop ?? null; ?>
+                                <?php if (!$shop): ?>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#addShopModal">
+                                        <i class="bi bi-shop"></i> Tambah Toko
+                                    </button>
+                                <?php endif; ?>
+                            </li>
                             <li><a href="/produk-m">Product</a>
                             </li>
                             <li><a href="/order">Order</a>

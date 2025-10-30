@@ -8,6 +8,7 @@ use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
+use App\Models\ShopModel;
 
 /**
  * Class BaseController
@@ -46,13 +47,25 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
+
+    protected $shopModel;
+    protected $shop;
+
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
 
-        // Preload any models, libraries, etc, here.
+        $this->shopModel = new ShopModel();
+        $userId = session()->get('user_id');
+        $role = session()->get('role');
 
-        // E.g.: $this->session = service('session');
+        $this->shop = null;
+
+        if ($userId && $role === 'seller') {
+            $this->shop = $this->shopModel->where('user_id', $userId)->first();
+        }
+
+        service('renderer')->setVar('shop', $this->shop);
     }
 }

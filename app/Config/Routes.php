@@ -42,6 +42,7 @@ $routes->post('/shop/add_shop', 'MerchantController::add_shop');
 $routes->get('/ulasan', 'MerchantController::ulasan', ['filter' => 'auth']);
 $routes->get('/email', 'MerchantController::email', ['filter' => 'auth']);
 $routes->get('/produk-m', 'MerchantController::produk', ['filter' => 'auth']);
+$routes->post('/produk-m/add_product', 'MerchantController::add_product');
 $routes->get('/order', 'MerchantController::order', ['filter' => 'auth']);
 $routes->get('/analisis-p', 'MerchantController::analisisProduk', ['filter' => 'auth']);
 $routes->get('/analisis-o', 'MerchantController::analisisOrder', ['filter' => 'auth']);
