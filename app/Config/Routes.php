@@ -49,7 +49,7 @@ $routes->get('/analisis-o', 'MerchantController::analisisOrder', ['filter' => 'a
 
 
 // Route Product
-$routes->get('/kategori', 'ProductController::kategori');
+$routes->get('/kategori/(:num)', 'ProductController::kategori/$1');
 $routes->get('/promo', 'ProductController::promo');
 $routes->get('/produk', 'ProductController::index');
 

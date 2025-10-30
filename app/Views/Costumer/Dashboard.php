@@ -33,13 +33,13 @@
             <div class="sidebar">
                 <h5><i class="fas fa-list me-2"></i>Kategori Produk</h5>
                 <ul class="category-list">
-                    <li><a href="/kategori"><i class="fas fa-th-large"></i>Semua Produk</a></li>
-                    <li><a href="/kategori"><i class="fas fa-utensils"></i>Makanan & Minuman</a></li>
-                    <li><a href="/kategori/"><i class="fas fa-tshirt"></i>Fashion & Aksesoris</a></li>
-                    <li><a href="/kategori"><i class="fas fa-hand-sparkles"></i>Kerajinan Tangan</a></li>
-                    <li><a href="/kategori"><i class="fas fa-mobile-alt"></i>Elektronik</a></li>
-                    <li><a href="/kategori"><i class="fas fa-heart"></i>Kesehatan & Kecantikan</a></li>
-                    <li><a href="/kategori"><i class="fas fa-ellipsis-h"></i>Lainnya</a></li>
+                    <?php foreach ($categories as $category): ?>
+                        <li>
+                            <a href="/kategori/<?= $category['category_id'] ?>">
+                                <i class="fas fa-tags"></i> <?= $category['name'] ?>
+                            </a>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
 
@@ -69,170 +69,34 @@
 
         <!-- Product Content -->
         <div class="col-lg-9">
-            <!-- Makanan Section -->
             <section id="produk">
-                <h2 class="section-title">Makanan & Minuman</h2>
+                <h2 class="section-title">Produk</h2>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&w=400"
-                                    alt="Keripik Pisang">
-                                <div class="product-badge">Terlaris</div>
-                                <button class="quick-view" title="Quick View">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-title">Keripik Pisang Manis</h3>
-                                <div class="product-rating">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
+                    <?php if (!empty($products)): ?>
+                        <?php foreach ($products as $product): ?>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="/uploads/products/<?= esc($product['image_url']) ?>"
+                                            alt="<?= esc($product['name']) ?>">
+                                        <button class="quick-view" title="Quick View">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
                                     </div>
-                                    <span class="rating-text">(127 ulasan)</span>
-                                </div>
-                                <div class="product-price">Rp 15.000</div>
-                                <button class="add-to-cart-btn">
-                                    <i class="fas fa-cart-plus"></i>
-                                    Tambah ke Keranjang
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&w=400"
-                                    alt="Rendang Padang">
-                                <div class="product-badge">Hot</div>
-                                <button class="quick-view" title="Quick View">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-title">Rendang Padang Asli</h3>
-                                <div class="product-rating">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
+                                    <div class="product-info">
+                                        <h3 class="product-title"><?= esc($product['name']) ?></h3>
+                                        <div class="product-price">Rp <?= number_format($product['price'], 0, ',', '.') ?></div>
+                                        <button class="add-to-cart-btn">
+                                            <i class="fas fa-cart-plus"></i>
+                                            Tambah ke Keranjang
+                                        </button>
                                     </div>
-                                    <span class="rating-text">(89 ulasan)</span>
                                 </div>
-                                <div class="product-price">Rp 50.000</div>
-                                <button class="add-to-cart-btn">
-                                    <i class="fas fa-cart-plus"></i>
-                                    Tambah ke Keranjang
-                                </button>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&w=400"
-                                    alt="Kue Lapis">
-                                <div class="product-badge">New</div>
-                                <button class="quick-view" title="Quick View">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-title">Kue Lapis Legit</h3>
-                                <div class="product-rating">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <span class="rating-text">(156 ulasan)</span>
-                                </div>
-                                <div class="product-price">Rp 25.000</div>
-                                <button class="add-to-cart-btn">
-                                    <i class="fas fa-cart-plus"></i>
-                                    Tambah ke Keranjang
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Produk Lainnya Section -->
-            <section>
-                <h2 class="section-title">Produk Lainnya</h2>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&w=400"
-                                    alt="Tas Rajut">
-                                <div class="product-badge">Handmade</div>
-                                <button class="quick-view" title="Quick View">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-title">Tas Rajut Handmade</h3>
-                                <div class="product-rating">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                    <span class="rating-text">(67 ulasan)</span>
-                                </div>
-                                <div class="product-price">Rp 45.000</div>
-                                <button class="add-to-cart-btn">
-                                    <i class="fas fa-cart-plus"></i>
-                                    Tambah ke Keranjang
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&w=400"
-                                    alt="Batik Handmade">
-                                <div class="product-badge">Premium</div>
-                                <button class="quick-view" title="Quick View">
-                                    <i class="fas fa-eye"></i>
-                                </button>
-                            </div>
-                            <div class="product-info">
-                                <h3 class="product-title">Batik Handmade Solo</h3>
-                                <div class="product-rating">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <span class="rating-text">(203 ulasan)</span>
-                                </div>
-                                <div class="product-price">Rp 100.000</div>
-                                <button class="add-to-cart-btn">
-                                    <i class="fas fa-cart-plus"></i>
-                                    Tambah ke Keranjang
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p class="text-center">Belum ada produk tersedia.</p>
+                    <?php endif; ?>
                 </div>
             </section>
         </div>

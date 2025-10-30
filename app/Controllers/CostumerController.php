@@ -1,16 +1,36 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\CategoryModel;
+use App\Models\ProductModel;
+use App\Models\ShopModel;
 
 class CostumerController extends BaseController
 {
-    protected $helpers = ['form', 'url'];
+    protected $shopModel;
+    protected $productModel;
+    protected $categoryModel;
+    protected $session;
+
+    protected $helpers = ['form', 'url', 'session'];
+
+    public function __construct()
+    {
+        $this->shopModel = new ShopModel();
+        $this->productModel = new ProductModel();
+        $this->categoryModel = new CategoryModel();
+        $this->session = session();
+    }
 
     public function index()
     {
+        $data['shops'] = $this->shopModel->findAll();
+        $data['products'] = $this->productModel->where('status', 'active')->findAll();
+        $data['categories'] = $this->categoryModel->where('status', 'active')->findAll();
+
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');
-        echo view('Costumer/Dashboard', );
+        echo view('Costumer/Dashboard', $data);
         echo view('Template/Costumer_Template/footer');
     }
 
