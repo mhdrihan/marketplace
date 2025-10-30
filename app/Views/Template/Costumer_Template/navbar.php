@@ -48,7 +48,7 @@
                         <span class="badge-count">2</span>
                     </a>
                     <div class="auth-buttons">
-                        <?php if (!session()->get('user_id')): ?>
+                        <?php if (!session()->get('logged_in')): ?>
                             <a href="/login" class="btn btn-outline-primary">Masuk</a>
                             <a href="/register" class="btn btn-primary">Daftar</a>
                         <?php else: ?>

@@ -12,7 +12,7 @@ $routes->get('/register', 'AuthController::register');
 $routes->post('/register/add', 'AuthController::doRegister');
 $routes->get('/register-m', 'AuthController::register_m');
 $routes->post('/register-m/add', 'AuthController::doRegister_m');
-$routes->get('/Profile', 'CostumerController::Profile');
+$routes->get('/Profile', 'CostumerController::Profile', ['filter' => 'auth']);
 $routes->get('/logout', 'AuthController::logout');
 
 
@@ -37,15 +37,15 @@ $routes->get('/Sistem-A', 'AdminController::Sistem');
 
 
 // Route Merchant
-$routes->get('/dashboard-m', 'MerchantController::index', ['filter' => 'auth']);
+$routes->get('/dashboard-m', 'MerchantController::index', ['filter' => 'seller']);
 $routes->post('/shop/add_shop', 'MerchantController::add_shop');
-$routes->get('/ulasan', 'MerchantController::ulasan', ['filter' => 'auth']);
-$routes->get('/email', 'MerchantController::email', ['filter' => 'auth']);
-$routes->get('/produk-m', 'MerchantController::produk', ['filter' => 'auth']);
+$routes->get('/ulasan', 'MerchantController::ulasan', ['filter' => 'seller']);
+$routes->get('/email', 'MerchantController::email', ['filter' => 'seller']);
+$routes->get('/produk-m', 'MerchantController::produk', ['filter' => 'seller']);
 $routes->post('/produk-m/add_product', 'MerchantController::add_product');
-$routes->get('/order', 'MerchantController::order', ['filter' => 'auth']);
-$routes->get('/analisis-p', 'MerchantController::analisisProduk', ['filter' => 'auth']);
-$routes->get('/analisis-o', 'MerchantController::analisisOrder', ['filter' => 'auth']);
+$routes->get('/order', 'MerchantController::order', ['filter' => 'seller']);
+$routes->get('/analisis-p', 'MerchantController::analisisProduk', ['filter' => 'seller']);
+$routes->get('/analisis-o', 'MerchantController::analisisOrder', ['filter' => 'seller']);
 
 
 // Route Product
@@ -55,5 +55,8 @@ $routes->get('/produk', 'ProductController::index');
 
 // Route Order and Payment
 $routes->get('/keranjang', 'OrderController::keranjang', ['filter' => 'auth']);
+$routes->post('/keranjang/add_cart', 'OrderController::add_cart');
+$routes->post('/keranjang/update_cart', 'OrderController::update_cart');
+$routes->get('/keranjang/remove_cart/(:num)', 'OrderController::remove_cart_item/$1');
 $routes->get('/pesanan', 'OrderController::pesanan', ['filter' => 'auth']);
 $routes->get('/wishlist', 'OrderController::wishlist', ['filter' => 'auth']);

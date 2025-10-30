@@ -37,7 +37,8 @@
                                         <div class="product-price">
                                             Rp <?= number_format($product['price'], 0, ',', '.') ?>
                                         </div>
-                                        <button class="add-to-cart-btn">
+                                        <button class="add-to-cart-btn" data-id="<?= $product['product_id'] ?>"
+                                            data-name="<?= $product['product_name'] ?>" data-price="<?= $product['price'] ?>">
                                             <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
                                         </button>
                                     </div>
@@ -52,39 +53,3 @@
         </div>
     </div>
 </div>
-
-<!-- Bootstrap JS Bundle (Popper + Bootstrap JS) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Script Filter Kategori -->
-<script>
-    document.querySelectorAll('.category-link').forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            // Hapus class active dari semua link
-            document.querySelectorAll('.category-link').forEach(l => l.classList.remove('active'));
-            // Tambah class active ke link yang diklik
-            this.classList.add('active');
-
-            const category = this.getAttribute('data-category');
-            const products = document.querySelectorAll('.product-item');
-
-            products.forEach(product => {
-                if (category === 'all') {
-                    product.style.display = 'block';
-                } else {
-                    if (product.getAttribute('data-category') === category) {
-                        product.style.display = 'block';
-                    } else {
-                        product.style.display = 'none';
-                    }
-                }
-            });
-        });
-    });
-</script>
-
-</body>
-
-</html>

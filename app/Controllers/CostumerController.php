@@ -4,12 +4,18 @@ namespace App\Controllers;
 use App\Models\CategoryModel;
 use App\Models\ProductModel;
 use App\Models\ShopModel;
+use App\Models\AuthModel;
+use App\Models\OrderModel;
+use App\Models\Order_ItemModel;
 
 class CostumerController extends BaseController
 {
     protected $shopModel;
     protected $productModel;
     protected $categoryModel;
+    protected $authModel;
+    protected $orderModel;
+    protected $order_itemModel;
     protected $session;
 
     protected $helpers = ['form', 'url', 'session'];
@@ -19,6 +25,9 @@ class CostumerController extends BaseController
         $this->shopModel = new ShopModel();
         $this->productModel = new ProductModel();
         $this->categoryModel = new CategoryModel();
+        $this->authModel = new AuthModel();
+        $this->orderModel = new OrderModel();
+        $this->order_itemModel = new Order_ItemModel();
         $this->session = session();
     }
 
@@ -34,14 +43,6 @@ class CostumerController extends BaseController
         echo view('Template/Costumer_Template/footer');
     }
 
-    public function kategori()
-    {
-        echo view('Template/Costumer_Template/header');
-        echo view('Template/Costumer_Template/navbar');
-        echo view('Costumer/Kategori');
-        echo view('Template/Costumer_Template/footer');
-    }
-
     public function notifikasi()
     {
         echo view('Template/Costumer_Template/header');
@@ -52,7 +53,13 @@ class CostumerController extends BaseController
 
     public function profile()
     {
-        $data['title'] = 'Profile';
+        $userId = session()->get('user_id');
+        $user = $this->authModel->find($userId);
+
+        $data = [
+            'title' => 'Profile',
+            'user' => $user
+        ];
 
         echo view('Template/Costumer_Template/header');
         echo view('Template/Costumer_Template/navbar');

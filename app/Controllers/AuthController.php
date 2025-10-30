@@ -40,7 +40,6 @@ class AuthController extends BaseController
 
     public function doLogin()
     {
-        $session = session();
 
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
@@ -57,7 +56,7 @@ class AuthController extends BaseController
         if (!password_verify($password, $user['password'])) {
             return redirect()->back()->with('error', 'Password salah!');
         }
-
+        $session = session();
         $session->set([
             'user_id' => $user['user_id'],
             'name' => $user['name'],

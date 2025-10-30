@@ -86,9 +86,10 @@
                                     <div class="product-info">
                                         <h3 class="product-title"><?= esc($product['name']) ?></h3>
                                         <div class="product-price">Rp <?= number_format($product['price'], 0, ',', '.') ?></div>
-                                        <button class="add-to-cart-btn">
-                                            <i class="fas fa-cart-plus"></i>
-                                            Tambah ke Keranjang
+                                        <button class="add-to-cart-btn" data-id="<?= $product['product_id'] ?>"
+                                            data-name="<?= $product['name'] ?>" data-price="<?= $product['price'] ?>"
+                                            data-image="<?= $product['image_url'] ?>">
+                                            <i class="fas fa-cart-plus"></i> Tambah ke Keranjang
                                         </button>
                                     </div>
                                 </div>
@@ -102,29 +103,3 @@
         </div>
     </div>
 </div>
-<!-- Bootstrap JS Bundle (Popper + Bootstrap JS) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-    $(document).ready(function () {
-        <?php if (session()->getFlashdata('error')): ?>
-            Swal.fire({
-                icon: 'error',
-                title: 'Gagal',
-                text: '<?= session()->getFlashdata('error') ?>',
-                confirmButtonText: 'OK'
-            });
-        <?php elseif (session()->getFlashdata('success')): ?>
-            Swal.fire({
-                icon: 'success',
-                title: 'Berhasil!',
-                text: '<?= session()->getFlashdata('success') ?>',
-                confirmButtonText: 'OK'
-            });
-        <?php endif; ?>
-    });
-</script>
-</body>
-
-</html>
