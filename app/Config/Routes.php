@@ -54,6 +54,6 @@ $routes->get('/promo', 'ProductController::promo');
 $routes->get('/produk', 'ProductController::index');
 
 // Route Order and Payment
-$routes->get('/keranjang', 'OrderController::keranjang');
-$routes->get('/pesanan', 'OrderController::pesanan');
-$routes->get('/wishlist', 'OrderController::wishlist');
+$routes->get('/keranjang', 'OrderController::keranjang', ['filter' => 'auth']);
+$routes->get('/pesanan', 'OrderController::pesanan', ['filter' => 'auth']);
+$routes->get('/wishlist', 'OrderController::wishlist', ['filter' => 'auth']);

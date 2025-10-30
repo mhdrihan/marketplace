@@ -48,8 +48,23 @@
                         <span class="badge-count">2</span>
                     </a>
                     <div class="auth-buttons">
-                        <a href="/login" class="btn btn-outline-primary">Masuk</a>
-                        <a href="/register" class="btn btn-primary">Daftar</a>
+                        <?php if (!session()->get('user_id')): ?>
+                            <a href="/login" class="btn btn-outline-primary">Masuk</a>
+                            <a href="/register" class="btn btn-primary">Daftar</a>
+                        <?php else: ?>
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="userDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-user"></i> <?= esc(session()->get('username')) ?>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                                    <li><a class="dropdown-item" href="/Profile"><i class="fas fa-user-circle"></i>
+                                            Profile</a></li>
+                                    <li><a class="dropdown-item" href="<?= base_url('/logout'); ?>"><i
+                                                class="fas fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

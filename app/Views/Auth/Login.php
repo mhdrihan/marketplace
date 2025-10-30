@@ -46,7 +46,7 @@
         <?php if (session()->getFlashdata('error')): ?>
             Swal.fire({
                 icon: 'error',
-                title: 'Gagal Login',
+                title: 'Gagal!',
                 text: '<?= session()->getFlashdata('error') ?>',
                 confirmButtonText: 'OK'
             });

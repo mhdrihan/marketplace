@@ -57,7 +57,7 @@
             <div class="sidebar mt-4">
                 <h5><i class="fas fa-user me-2"></i>Akun Saya</h5>
                 <ul class="category-list">
-                    <li><a href="/Profile"><i class="fas fa-user-circle"></i>Profil</a></li>
+                    <li><a href="/Profile"><i class="fas fa-user-circle"></i>Profile</a></li>
                     <li><a href="/pesanan"><i class="fas fa-shopping-bag"></i>Pesanan Saya</a></li>
                     <li><a href="/wishlist"><i class="fas fa-heart"></i>Wishlist</a></li>
                     <li><a href="/keranjang"><i class="fas fa-shopping-cart"></i>Keranjang Belanja</a></li>
@@ -111,7 +111,7 @@
         <?php if (session()->getFlashdata('error')): ?>
             Swal.fire({
                 icon: 'error',
-                title: 'Gagal Login',
+                title: 'Gagal',
                 text: '<?= session()->getFlashdata('error') ?>',
                 confirmButtonText: 'OK'
             });
